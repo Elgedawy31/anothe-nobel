@@ -20,6 +20,7 @@ const NavBar = () => {
   const mobileMenuElement = useRef(null);
   const [search, setSearch] = useState("");
   const [listMap, setListMap] = useState([]);
+  const inputRef = useRef(null);
   const activeMobileMenu = () => {
     mobileMenuElement.current.toggleMobileMenu();
   };
@@ -61,6 +62,11 @@ const NavBar = () => {
       searchArr.filter((e) => e.text.includes(search.toLocaleLowerCase()))
     );
   }, [search]);
+
+  const handleblur = () => {
+    inputRef.current.blur();
+    setFocused(false);
+  };
   return (
     <div>
       <div
@@ -78,11 +84,14 @@ const NavBar = () => {
                 <div className="col-lg-12">
                   <div className="header-info-wrapper align-items-center">
                     <div className="header-contact-info justify-content-start ">
-                      <div className=" search-section">
+                      <div
+                        className=" search-section"
+                        onMouseLeave={() => handleblur()}
+                      >
                         <input
                           type="text"
+                          ref={inputRef}
                           onChange={(e) => setSearch(e.target.value)}
-                          onBlur={() => setFocused(false)}
                           onFocus={() => setFocused(true)}
                           placeholder="Search For Models"
                         />
