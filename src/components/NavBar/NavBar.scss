@@ -848,7 +848,7 @@
 
 .header-info-area {
   padding: 35px 0;
-    border-bottom: 1px solid $theme-color--secondary;
+  border-bottom: 1px solid $theme-color--secondary;
 }
 
 // .private-border-bt{
@@ -927,6 +927,7 @@
 .search-section {
   > input {
     padding: 0.4rem 0.8rem;
+    width: 300px;
     border: 2px solid $theme-color--default;
     border-radius: 0.2rem;
   }
@@ -1363,4 +1364,3 @@
 }
 
 /*=====  End of Header  ======*/
-

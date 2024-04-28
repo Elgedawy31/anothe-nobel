@@ -7,16 +7,19 @@ import MobileMenu from "../mobileMenu/MobileMenu";
 // @ts-ignore
 import logo from "../../assets/logo.png";
 import { useTranslation } from "react-i18next";
+import SearchModal from "../../components/searchModal/SearchModal";
 
 const NavBar = () => {
   const { t, i18n } = useTranslation();
 
   const [state, setState] = useState({ state: false });
+  const [focused, setFocused] = useState(false);
   const [scroll, setScroll] = useState(0);
   const [top, setTop] = useState(0);
   const [height, setHeight] = useState(0);
   const mobileMenuElement = useRef(null);
-
+  const [search, setSearch] = useState("");
+  const [listMap, setListMap] = useState([]);
   const activeMobileMenu = () => {
     mobileMenuElement.current.toggleMobileMenu();
   };
@@ -45,10 +48,21 @@ const NavBar = () => {
     }));
   };
 
-  
+  const searchArr = [
+    { text: "axad", link: "/products/axial-fans" },
+    { text: "axial", link: "/products/axial-dfa;l" },
+    { text: "axial", link: "/products/axial-dfa;l" },
+    { text: "axial", link: "/products/axial-dfa;l" },
+    { text: "axial", link: "/products/axial-dfa;l" },
+  ];
 
+  useEffect(() => {
+    setListMap(
+      searchArr.filter((e) => e.text.includes(search.toLocaleLowerCase()))
+    );
+  }, [search]);
   return (
-    <div >
+    <div>
       <div
         className={`header-area header-sticky header-sticky--default ${
           scroll > top ? "is-sticky" : ""
@@ -65,7 +79,32 @@ const NavBar = () => {
                   <div className="header-info-wrapper align-items-center">
                     <div className="header-contact-info justify-content-start ">
                       <div className=" search-section">
-                        <input type="text" placeholder="Search For Models" />
+                        <input
+                          type="text"
+                          onChange={(e) => setSearch(e.target.value)}
+                          onBlur={() => setFocused(false)}
+                          onFocus={() => setFocused(true)}
+                          placeholder="Search For Models"
+                        />
+                        {focused && (
+                          <ul
+                            className=" py-3 px-4 d-flex flex-column gap-3  position-absolute "
+                            style={{
+                              zIndex: "10000000000000",
+                              listStyle: "none",
+                              width: "300px",
+                              backgroundColor: "white",
+
+                              boxShadow: "0 0 5px rgba(0, 0, 0, 0.01)",
+                            }}
+                          >
+                            {listMap?.map((e) => (
+                              <Link to={e.link} className="fs-6">
+                                {e.text}
+                              </Link>
+                            ))}
+                          </ul>
+                        )}
                       </div>
                     </div>
                     <div className="logo">
@@ -84,9 +123,13 @@ const NavBar = () => {
                           }}
                         >
                           <GrLanguage fontSize={"1rem"} />
-                          <div>{state.state ? "EN" : 
-                            i18n.language == "ar" ? "EN" : "AR"
-                        }</div>
+                          <div>
+                            {state.state
+                              ? "EN"
+                              : i18n.language == "ar"
+                              ? "EN"
+                              : "AR"}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -102,9 +145,13 @@ const NavBar = () => {
                         }}
                       >
                         <GrLanguage fontSize={"1rem"} />
-                          <div>{state.state ? "EN" : 
-                            i18n.language == "ar" ? "EN" : "AR"
-                        }</div>
+                        <div>
+                          {state.state
+                            ? "EN"
+                            : i18n.language == "ar"
+                            ? "EN"
+                            : "AR"}
+                        </div>
                       </div>
                     </div>
                     <div
@@ -119,7 +166,10 @@ const NavBar = () => {
               </div>
             </div>
           </div>
-          <div className="header-navigation-area white-bg private-border-bt" dir={i18n.language === "en" ? "ltr" : "rtl"}>
+          <div
+            className="header-navigation-area white-bg private-border-bt"
+            dir={i18n.language === "en" ? "ltr" : "rtl"}
+          >
             <div className="container">
               <div className="row">
                 <div className="col-lg-12">
@@ -128,12 +178,17 @@ const NavBar = () => {
                       <nav>
                         <ul>
                           <li className="has-children--multilevel-submenu">
-                            <Link to={`/`}>   {i18n.language === "en" ? "HOME" : "الصفحة الرئيسية"} </Link>
+                            <Link to={`/`}>
+                              {" "}
+                              {i18n.language === "en"
+                                ? "HOME"
+                                : "الصفحة الرئيسية"}{" "}
+                            </Link>
                           </li>
 
                           <li className="has-children has-children--multilevel-submenu">
                             <Link to={`/products`}>
-                            {i18n.language === "en" ? "PRODUCTS" : "المنتجات"}
+                              {i18n.language === "en" ? "PRODUCTS" : "المنتجات"}
                               <MdOutlineKeyboardArrowDown
                                 style={{ marginLeft: "6px" }}
                                 fontSize={"1.2rem"}
@@ -145,8 +200,9 @@ const NavBar = () => {
                                   to={`/products/centrifugal-fan/heavy-duty`}
                                   className="uppercase"
                                 >
-                                    {i18n.language === "en" ? "Centrifugal Fan" : "المروحة الطاردة"}
-
+                                  {i18n.language === "en"
+                                    ? "Centrifugal Fan"
+                                    : "المروحة الطاردة"}
                                 </Link>
 
                                 <ul className="submenu">
@@ -154,24 +210,27 @@ const NavBar = () => {
                                     <Link
                                       to={`/products/centrifugal-fan/heavy-duty`}
                                     >
-                                        {i18n.language === "en" ? "Heavy Duty" : "الخدمة الشاقة"}
-
+                                      {i18n.language === "en"
+                                        ? "Heavy Duty"
+                                        : "الخدمة الشاقة"}
                                     </Link>
                                   </li>
                                   <li>
                                     <Link
                                       to={`/products/centrifugal-fan/transport-series`}
                                     >
-                                        {i18n.language === "en" ? "Transport Series" : "سلسلة النقل"}
-
+                                      {i18n.language === "en"
+                                        ? "Transport Series"
+                                        : "سلسلة النقل"}
                                     </Link>
                                   </li>
                                   <li>
                                     <Link
                                       to={`/products/centrifugal-fan/box-fans`}
                                     >
-                                        {i18n.language === "en" ? "Box Fans" : "مراوح صندوقية"}
-
+                                      {i18n.language === "en"
+                                        ? "Box Fans"
+                                        : "مراوح صندوقية"}
                                     </Link>
                                   </li>
                                 </ul>
@@ -181,8 +240,9 @@ const NavBar = () => {
                                   to={`/products/axial-fans`}
                                   className="uppercase"
                                 >
-                                {i18n.language === "en" ? "Axial Fans Ventilation" : "المراوح المحورية للتهوية"}
-
+                                  {i18n.language === "en"
+                                    ? "Axial Fans Ventilation"
+                                    : "المراوح المحورية للتهوية"}
                                 </Link>
 
                                 {/* <ul className="submenu">
@@ -210,8 +270,9 @@ const NavBar = () => {
                                   to={`/products/roof-top-fans`}
                                   className="uppercase"
                                 >
-                                    {i18n.language === "en" ? "Roof Top Fans" : "مراوح السطح"}
-
+                                  {i18n.language === "en"
+                                    ? "Roof Top Fans"
+                                    : "مراوح السطح"}
                                 </Link>
 
                                 {/* <ul className="submenu">
@@ -232,8 +293,9 @@ const NavBar = () => {
                                   to={`/products/air-filering`}
                                   className="uppercase"
                                 >
-                                  {i18n.language === "en" ? "Air Filtering System" : "نظام تصفية الهواء"}
-
+                                  {i18n.language === "en"
+                                    ? "Air Filtering System"
+                                    : "نظام تصفية الهواء"}
                                 </Link>
 
                                 {/* <ul className="submenu">
@@ -259,8 +321,9 @@ const NavBar = () => {
                                   to={`/products/custom-venilrators`}
                                   className="uppercase"
                                 >
-                                    {i18n.language === "en" ? "Custom Ventilators" : "المنتجات المخصصة للتهوية"}
-
+                                  {i18n.language === "en"
+                                    ? "Custom Ventilators"
+                                    : "المنتجات المخصصة للتهوية"}
                                 </Link>
 
                                 {/* <ul className="submenu">
@@ -276,8 +339,9 @@ const NavBar = () => {
                                   to={`/products/accessories`}
                                   className="uppercase"
                                 >
-                                    {i18n.language === "en" ? "Accessories" : "ملحقات"}
-
+                                  {i18n.language === "en"
+                                    ? "Accessories"
+                                    : "ملحقات"}
                                 </Link>
 
                                 {/* <ul className="submenu">
@@ -293,7 +357,9 @@ const NavBar = () => {
                           </li>
                           <li className=" has-children--multilevel-submenu">
                             <Link to={"/applications"} className="menu-link">
-                            {i18n.language === "en" ? "APPLICATIONS" : "التطبيقات"}
+                              {i18n.language === "en"
+                                ? "APPLICATIONS"
+                                : "التطبيقات"}
                               {/* <MdOutlineKeyboardArrowDown
                                   style={{ marginLeft: "6px" }}
                                   fontSize={"1.2rem"}
@@ -328,13 +394,15 @@ const NavBar = () => {
                           </li>
 
                           <li>
-                            <Link to={`/certifications`}>  
-                             {i18n.language === "en" ? "CERTIFICATIONS" : "الشهادات"}</Link>{" "}
+                            <Link to={`/certifications`}>
+                              {i18n.language === "en"
+                                ? "CERTIFICATIONS"
+                                : "الشهادات"}
+                            </Link>{" "}
                           </li>
                           <li>
                             <Link to={`/about-us`}>
-                            {i18n.language === "en" ? "ABOUT" : "عنا"}
-                             
+                              {i18n.language === "en" ? "ABOUT" : "عنا"}
                             </Link>
                           </li>
                           {/* <li>
@@ -350,8 +418,7 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <MobileMenu ref={mobileMenuElement}  t={t} i18n={i18n} />
-      
+      <MobileMenu ref={mobileMenuElement} t={t} i18n={i18n} />
     </div>
   );
 };

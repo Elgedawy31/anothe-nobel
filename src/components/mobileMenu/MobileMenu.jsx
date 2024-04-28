@@ -68,7 +68,7 @@ class MobileMenu extends Component {
             id="mobile-menu-close-trigger"
             onClick={this.toggleMobileMenu}
           >
-            <IoMdClose />
+            <IoMdClose  />
           </a>
           <div className="offcanvas-wrapper">
             <div className="offcanvas-inner-content">
