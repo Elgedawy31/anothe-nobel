@@ -1,0 +1,158 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "./defaults.scss";
+
+$theme-color--default: #f5691d;
+$theme-color--secondary: #357adc;
+$theme-color--black2: #11202d;
+$theme-color--black3: #05103b;
+$theme-color--black4: #313131;
+$theme-color--black: #222;
+$body-text-color: #858585;
+
+$transition--cubic: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+$white: #ffffff;
+$black: #000000;
+
+@mixin font-prop($size: false, $colour: false, $weight: false, $lh: false) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $colour {
+    color: $colour;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+}
+
+@mixin responsive($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+//media queries
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1499px)";
+$desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+$large-mobile: "only screen and (max-width: 767px)";
+$small-mobile: "only screen and (max-width: 575px)";
+$extra-small-mobile: "only screen and (max-width: 479px)";
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: outside none none;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  visibility: visible;
+
+  &.no-overflow {
+    overflow: hidden;
+  }
+
+  &.boxed {
+    max-width: 1500px;
+    margin: 0 auto;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.06);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: $theme-color--default;
+  color: white;
+}
+
+.space-between-sections {
+  margin: 50px 0;
+  @media #{$desktop-device} {
+    margin: 45px;
+  }
+  @media #{$tablet-device} {
+    margin: 40px;
+  }
+  @media #{$large-mobile} {
+    margin: 35px;
+  }
+  @media #{$small-mobile} {
+    margin: 30px;
+  }
+  @media #{$extra-small-mobile} {
+    margin: 25px;
+  }
+}
+
+.bg-color {
+  background: rgba(49, 122, 224, 0.09);
+}
+
+.primary-color {
+  color: $theme-color--default;
+}
+.secondary-color {
+  color: $theme-color--secondary;
+}
+
+.card {
+  border: none !important;
+}
+
+.fs-lg {
+  font-size: 47px;
+  font-weight: 500;
+  @media #{$desktop-device} {
+    font-size: 40px;
+  }
+  @media #{$tablet-device} {
+    font-size: 33px;
+  }
+  @media #{$large-mobile} {
+    font-size: 26px;
+  }
+}
+
+.main-btn {
+  width: fit-content;
+  border: 2px solid $theme-color--default;
+  color: $theme-color--default;
+  text-transform: capitalize;
+  padding: 0.4rem 1.6rem;
+  background-color: transparent;
+  font-size: 22px;
+  font-weight: 400;
+  transition: $transition--cubic;
+  &:hover {
+    background-color: $theme-color--default;
+    color: white;
+  }
+}
+
+.tablet-gap {
+  @media (max-width: 992px) {
+    margin-top: 20px;
+  }
+}
+.tablet-center {
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+}
+
+.product-card {
+  background-color: rgba(49, 122, 224, 0.02);
+  box-shadow: 0px 4px 15px 0px rgba(49, 122, 224, 0.2);
+  border-radius: 8px;
+}

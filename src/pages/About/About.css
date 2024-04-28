@@ -1,0 +1,122 @@
+
+.about_top h1 {
+  text-align: center;
+  color: #317AE0;
+  font-size: 44px;
+  margin-top: 2.5rem;
+  margin-bottom: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.about_top p {
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 0rem !important;
+  margin-top: -0.5rem !important;
+}
+.about_top h4 {
+  color: #317AE0;
+  font-weight: 700;
+  font-size: 26px;
+  margin-top: 2rem;
+}
+.about_top p:last-of-type {
+  padding-bottom: 8rem;
+}
+
+
+.about_bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.about_bottom .card {
+  padding:1rem;
+  box-shadow: 0px 4px 15px rgba(49, 122, 224, 0.20);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about_bottom .card .iconn {
+ color: #317AE0;
+ font-size: 88px;
+}
+.about_bottom .card div {
+  text-align: center;
+  color: #F5691D;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0.5em 0 1.4rem;
+}
+.about_bottom .card p {
+  color: rgba(49, 122, 224, 0.70);
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 3rem;
+  text-transform: uppercase; 
+}
+.about_bottom .card p span {
+  text-transform: lowercase; 
+}
+.about_bottom .card button {
+  outline: none;
+  background: transparent;
+  border: 2px solid #F5691D;
+  width: fit-content;
+  color: #F16E16;
+  padding: 0.3rem 1.2rem;
+  font-size: 17px;
+  display: block;
+  /* margin: 0 auto 0.7rem; */
+  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0.2rem;
+}
+
+
+                                      /* responsive */
+@media (max-width:992px) {
+  .about_bottom {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  
+.about_top h1 {
+  font-size: 40px;
+  margin-top: 2.5rem;
+  margin-bottom: 1.7rem;
+}
+.about_top p {
+  font-size: 22px;
+}
+.about_top h4 {
+  font-size: 24px;
+  margin-top: 2rem;
+}
+.about_top p:last-of-type {
+  padding-bottom: 6.5rem;
+}
+
+}
+@media (max-width:775px) {
+  .about_bottom {
+    grid-template-columns: 1fr;
+  }  
+  .about_top p {
+    font-size: 19px;
+  }
+  .about_top h4 {
+    font-size: 22px;
+    margin-top: 2rem;
+  }
+}
+@media (max-width:400px) {
+  .about_bottom .card .iconn {
+    font-size: 75px;
+   }
+}

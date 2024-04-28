@@ -1,0 +1,15 @@
+
+.products h1 {
+  text-align: center;
+  color: #317AE0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.products .image {
+  width: fit-content;
+  height: 115px;
+}
+.products img {
+  max-width: 100%;
+}

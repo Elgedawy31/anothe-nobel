@@ -1,0 +1,78 @@
+
+.contact h1 {
+  color: #317AE0;
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.contact form {
+  padding: 3.5rem 6.5rem;
+  background: rgba(49, 122, 224, 0.09);
+  box-shadow: 0px 4px 14px rgba(49, 122, 224, 0.61);
+  width: 80%;  
+  margin: 0 auto;
+  margin-bottom: 5.9rem;
+}
+.contact form p {
+  text-align: center;
+  color: #317AE0;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.parent_input {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+  margin-bottom: 1.7rem;
+}
+.parent_input input, 
+.parent_input textarea {
+  background: transparent;
+  border: 1px solid #F5691D;
+  padding: 1rem;
+  width: 100%;
+}
+.parent_input input::placeholder,
+.parent_input textarea::placeholder {
+  color: #317AE0;
+}
+.contact form button {
+  border: none;
+  outline: none;
+  background: #F5691D;
+  color: white;
+  padding: 0.3rem 2.5rem;
+  font-size: 17px;
+  border-radius: 0.4rem;
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+
+@media (max-width:992px) {
+  .contact form {
+    padding: 2rem 3.1rem;
+    width: 100%;  
+  }
+}
+@media (max-width:775px) {
+  .contact form {
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+  .parent_input {
+    gap: 0.5rem;
+  }
+  .contact form p {
+    font-size: 22px;
+  }
+}
+@media (max-width:550px) {
+  .contact h1 {
+    font-size: 37px;
+  }
+}
