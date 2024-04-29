@@ -50,12 +50,16 @@ const NavBar = () => {
   };
 
   const searchArr = [
-    { text: "axad", link: "/products/axial-fans" },
-    { text: "axial", link: "/products/axial-dfa;l" },
-    { text: "axial", link: "/products/axial-dfa;l" },
-    { text: "axial", link: "/products/axial-dfa;l" },
-    { text: "axial", link: "/products/axial-dfa;l" },
-  ];
+    { text: i18n.language === "en" ? "Centrifugal Fan (heavy duty)" : "مروحة الطرد المركزي (الخدمة الشاقة)", link: "/products/centrifugal-fan/heavy-duty" },
+    { text: i18n.language === "en" ? "Centrifugal Fan (transport series)" : "مروحة الطرد المركزي (سلسلة النقل)", link: "/products/centrifugal-fan/transport-series" },
+    { text: i18n.language === "en" ? "Centrifugal Fan (box fans)" : "مروحة الطرد المركزي (مراوح الصندوق)", link: "/products/centrifugal-fan/box-fans" },
+    { text: i18n.language === "en" ? "Accessories" : "الملحقات", link: "/products/accessories" },
+    { text: i18n.language === "en" ? "Custom Ventilators" : "المنافي العرفية", link: "/products/custom-ventilators" },
+    { text: i18n.language === "en" ? "Air Filtering" : "تصفية الهواء", link: "/products/air-filtering" },
+    { text: i18n.language === "en" ? "Roof Top Fans" : "مروحة السطح", link: "/products/roof-top-fans" },
+    { text: i18n.language === "en" ? "Axial Fans" : "المروحة الشفافة", link: "/products/axial-fans" },
+];
+
 
   useEffect(() => {
     setListMap(
@@ -84,7 +88,7 @@ const NavBar = () => {
                 <div className="col-lg-12">
                   <div className="header-info-wrapper align-items-center">
                     <div className="header-contact-info justify-content-start ">
-                      <div
+                      <div 
                         className=" search-section"
                         onMouseLeave={() => handleblur()}
                       >
@@ -93,10 +97,10 @@ const NavBar = () => {
                           ref={inputRef}
                           onChange={(e) => setSearch(e.target.value)}
                           onFocus={() => setFocused(true)}
-                          placeholder="Search For Models"
+                          placeholder={i18n.language === "en" ? "Search For Models" : "ابحث عن المنتجات"}
                         />
                         {focused && (
-                          <ul
+                          <ul dir={i18n.language === "en" ? "ltr" : "rtl"}
                             className=" py-3 px-4 d-flex flex-column gap-3  position-absolute "
                             style={{
                               zIndex: "10000000000000",

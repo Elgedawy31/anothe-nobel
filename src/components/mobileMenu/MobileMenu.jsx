@@ -74,7 +74,9 @@ class MobileMenu extends Component {
             <div className="offcanvas-inner-content">
               <div className="offcanvas-mobile-search-area">
                 <form action="#">
-                  <input type="search" placeholder="Search ..." />
+                  <input type="search" 
+                 placeholder={i18n.language === "en" ? "Search ..." : "...البحث"} 
+                  />
                   <button type="submit">
                     <i className="fa fa-search" />
                   </button>
@@ -83,19 +85,27 @@ class MobileMenu extends Component {
               <nav className="offcanvas-navigation" id="offcanvas-navigation">
                 <ul>
                   <li className="menu-item-has-children">
-                    <Link to={`/`}
-                    >HOME</Link>
+                      <Link to={`/`}>
+                              {" "}
+                              {i18n.language === "en"
+                                ? "HOME"
+                                : "الصفحة الرئيسية"}{" "}
+                        </Link>
                   </li>
 
                   <li className="menu-item-has-children">
-                    <Link to={`/products`}>PRODUCTS</Link>
+                    <Link to={`/products`}>
+                      {i18n.language === "en" ? "PRODUCTS" : "المنتجات"}
+                      </Link>
                     <ul className="sub-menu">
                               <li className="has-children has-children--multilevel-submenu">
                                 <Link
                                   to={`/products/centrifugal-fan/heavy-duty`}
                                   className="uppercase"
                                 >
-                                  Centrifugal Fan
+                                  {i18n.language === "en"
+                                    ? "Centrifugal Fan"
+                                    : "المروحة الطاردة"}
                                 </Link>
 
                                 <ul className="sub-menu">
@@ -103,21 +113,27 @@ class MobileMenu extends Component {
                                     <Link
                                       to={`/products/centrifugal-fan/heavy-duty`}
                                     >
-                                      Heavy Duty
+                                        {i18n.language === "en"
+                                        ? "Heavy Duty"
+                                        : "الخدمة الشاقة"}
                                     </Link>
                                   </li>
                                   <li>
                                     <Link
                                       to={`/products/centrifugal-fan/transport-series`}
                                     >
-                                      Transport Series
+                                      {i18n.language === "en"
+                                        ? "Transport Series"
+                                        : "سلسلة النقل"}
                                     </Link>
                                   </li>
                                   <li>
                                     <Link
                                       to={`/products/centrifugal-fan/box-fans`}
                                     >
-                                      Box Fans
+                                    {i18n.language === "en"
+                                        ? "Box Fans"
+                                        : "مراوح صندوقية"}
                                     </Link>
                                   </li>
                                 </ul>
@@ -127,7 +143,9 @@ class MobileMenu extends Component {
                                   to={`/products/axial-fans`}
                                   className="uppercase"
                                 >
-                                  Axial Fans Ventilation
+                                {i18n.language === "en"
+                                    ? "Axial Fans Ventilation"
+                                    : "المراوح المحورية للتهوية"}
                                 </Link>
 
                                 {/* <ul className="submenu">
@@ -155,7 +173,9 @@ class MobileMenu extends Component {
                                   to={`/products/roof-top-fans`}
                                   className="uppercase"
                                 >
-                                  Roof Top Fans
+                                  {i18n.language === "en"
+                                    ? "Roof Top Fans"
+                                    : "مراوح السطح"}
                                 </Link>
 
                                 {/* <ul className="submenu">
@@ -176,7 +196,9 @@ class MobileMenu extends Component {
                                   to={`/products/air-filering`}
                                   className="uppercase"
                                 >
-                                  Air Filering System
+                                {i18n.language === "en"
+                                    ? "Air Filtering System"
+                                    : "نظام تصفية الهواء"}
                                 </Link>
 
                                 {/* <ul className="submenu">
@@ -202,7 +224,9 @@ class MobileMenu extends Component {
                                   to={`/products/custom-venilrators`}
                                   className="uppercase"
                                 >
-                                  Custom Venilrators
+                                  {i18n.language === "en"
+                                    ? "Custom Ventilators"
+                                    : "المنتجات المخصصة للتهوية"}
                                 </Link>
 
                                 {/* <ul className="submenu">
@@ -218,7 +242,9 @@ class MobileMenu extends Component {
                                   to={`/products/accessories`}
                                   className="uppercase"
                                 >
-                                  Accessories
+                                    {i18n.language === "en"
+                                    ? "Accessories"
+                                    : "ملحقات"}
                                 </Link>
 
                                 {/* <ul className="submenu">
@@ -233,7 +259,11 @@ class MobileMenu extends Component {
                             </ul>
                   </li>
                   <li className="menu-item-has-children">
-                    <Link to={`/applications`}>APPLICATIONS</Link>
+                    <Link to={`/applications`}>
+                    {i18n.language === "en"
+                                ? "APPLICATIONS"
+                                : "التطبيقات"}
+                    </Link>
                     {/* <ul className="sub-menu">
                       <li>
                         <Link to={`/locations/alabama`} className="uppercase">
@@ -254,10 +284,17 @@ class MobileMenu extends Component {
                   </li>
 
                   <li className="menu-item-has-children">
-                    <Link to={`/certifications`}>CERTIFICATIONS</Link>
+                    <Link to={`/certifications`}>
+                    {i18n.language === "en"
+                                ? "CERTIFICATIONS"
+                                : "الشهادات"}
+                    </Link>
                   </li>
                   <li>
-                    <Link to={`/about-us`}>ABOUT</Link>
+                    <Link to={`/about-us`}>
+                    {i18n.language === "en" ? "ABOUT" : "عنا"}
+
+                    </Link>
                   </li>
                   {/* <li>
                     <Link to={`/contact-us`}>CONTACT</Link>
