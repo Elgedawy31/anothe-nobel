@@ -77,11 +77,11 @@ const NavBar = () => {
     },
     {
       text: i18n.language === "en" ? "Custom Ventilators" : "المنافي العرفية",
-      link: "/products/custom-ventilators",
+      link: "/products/custom-venilrators",
     },
     {
       text: i18n.language === "en" ? "Air Filtering" : "تصفية الهواء",
-      link: "/products/air-filtering",
+      link: "/products/air-filering",
     },
     {
       text: i18n.language === "en" ? "Roof Top Fans" : "مروحة السطح",

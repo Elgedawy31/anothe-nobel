@@ -332,9 +332,10 @@ class MobileMenu extends Component {
                 {/*Off Canvas Widget Social Start*/}
                 <div className="off-canvas-widget-social">
                   <div className="icons_social"></div>
-                  <a href="#/" title="Facebook">
+                  <Link style={{cursor:"pointer"}} to="https://www.facebook.com/share/1xtrnQw6tvfro1Yi/?mibextid=qi2Omg" target="_blank" title="Facebook">
+                    
                     <FaFacebook />
-                  </a>
+                  </Link>
                   <a href="#/" title="Twitter">
                     <FaTwitter />
                   </a>

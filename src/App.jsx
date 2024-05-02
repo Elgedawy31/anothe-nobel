@@ -44,7 +44,7 @@ const App = () => {
           <Route path="/products/custom-venilrators" element={<CustomVenilrators  />} />
           <Route path="/products/air-filering" element={<AirFilering  />} />
           <Route path="/products/roof-top-fans" element={<RoofTopFans  />} />
-          <Route path="/products/axial-fans" element={<AxialFans  />} />
+          <Route path="/products/axial-fans" element={<AxialFans  />} />           
 
           <Route path="*" element={<div>not found</div>} />
         </Routes>

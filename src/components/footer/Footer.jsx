@@ -22,8 +22,12 @@ function Footer() {
                       <img src={Logo} alt="" />
                    </div>
                    <div className="icons_social">
-                        <FaInstagram fontSize={22}/>
-                        <FaFacebook fontSize={22}/>
+                          <FaInstagram fontSize={22}/>
+                        <Link style={{cursor:"pointer"}} to="https://www.facebook.com/share/1xtrnQw6tvfro1Yi/?mibextid=qi2Omg" target="_blank">
+
+                           <FaFacebook fontSize={22}/>
+                        </Link>
+
                         <FaTwitter fontSize={22}/>
                         <FaPinterest fontSize={22}/>
                    </div>
