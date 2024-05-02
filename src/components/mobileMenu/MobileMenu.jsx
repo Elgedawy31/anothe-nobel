@@ -74,7 +74,7 @@ class MobileMenu extends Component {
             <div className="offcanvas-inner-content">
               <div className="offcanvas-mobile-search-area">
                 <form action="#">
-                  <input type="search" 
+                  <input type="search\j" 
                  placeholder={i18n.language === "en" ? "Search ..." : "...البحث"} 
                   />
                   <button type="submit">
