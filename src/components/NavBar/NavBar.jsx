@@ -91,6 +91,14 @@ const NavBar = () => {
       text: i18n.language === "en" ? "Axial Fans" : "المروحة الشفافة",
       link: "/products/axial-fans",
     },
+    {
+      text: i18n.language === "en" ? "smoke axial inline fans" : "مراوح الدخان الخطية المحورية",
+      link: "/products/smoke-axial",
+    },
+    {
+      text: i18n.language === "en" ? "smoke centrifugal fans" : "مراوح الدخان الطردية",
+      link: "/products/smoke-centrifugal",
+    },
   ];
 
   useEffect(() => {
@@ -402,6 +410,26 @@ const NavBar = () => {
                                       <Link to={`/products`}>Air Outlets</Link>
                                     </li>
                                   </ul> */}
+                              </li>
+                              <li className="has-children has-children--multilevel-submenu">
+                                <Link
+                                  to={`/products/smoke-axial`}
+                                  className="uppercase"
+                                >
+                                  {i18n.language === "en"
+                                    ? "smoke axial inline fans"
+                                    : "مراوح الدخان الخطية المحورية"}
+                                </Link>                              
+                              </li>
+                              <li className="has-children has-children--multilevel-submenu">
+                                <Link
+                                  to={`/products/smoke-centrifugal`}
+                                  className="uppercase"
+                                >
+                                  {i18n.language === "en"
+                                    ? "smoke centrifugal fans"
+                                    : "مراوح الدخان الطردية"}
+                                </Link>                              
                               </li>
                             </ul>
                           </li>

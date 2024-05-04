@@ -16,6 +16,8 @@ import AirFilering from "./pages/airFerling/AirFilering";
 import RoofTopFans from "./pages/roofTopFans/RoofTopFans";
 import AxialFans from "./pages/axialFans/AxialFans";
 import './i18n';
+import Smokeaxial from "./pages/smokeaxial/Smokeaxial";
+import Smokecentrifugal from "./pages/smokecentrifugal/Smokecentrifugal";
 
 
 
@@ -45,6 +47,8 @@ const App = () => {
           <Route path="/products/air-filering" element={<AirFilering  />} />
           <Route path="/products/roof-top-fans" element={<RoofTopFans  />} />
           <Route path="/products/axial-fans" element={<AxialFans  />} />           
+          <Route path="/products/smoke-axial" element={<Smokeaxial  />} />           
+          <Route path="/products/smoke-centrifugal" element={<Smokecentrifugal  />} />           
 
           <Route path="*" element={<div>not found</div>} />
         </Routes>

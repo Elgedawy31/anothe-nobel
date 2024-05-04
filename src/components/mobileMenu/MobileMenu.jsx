@@ -272,6 +272,26 @@ class MobileMenu extends Component {
                                     </li>
                                   </ul> */}
                       </li>
+                      <li className="has-children has-children--multilevel-submenu">
+                                <Link
+                                  to={`/products/smoke-axial`}
+                                  className="uppercase"
+                                >
+                                  {i18n.language === "en"
+                                    ? "smoke axial inline fans"
+                                    : "مراوح الدخان الخطية المحورية"}
+                                </Link>                              
+                              </li>
+                              <li className="has-children has-children--multilevel-submenu">
+                                <Link
+                                  to={`/products/smoke-centrifugal`}
+                                  className="uppercase"
+                                >
+                                  {i18n.language === "en"
+                                    ? "smoke centrifugal fans"
+                                    : "مراوح الدخان الطردية"}
+                                </Link>                              
+                              </li>
                     </ul>
                   </li>
                   <li className="menu-item-has-children">
