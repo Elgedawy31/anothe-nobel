@@ -7,6 +7,13 @@ import { LiaCrosshairsSolid } from "react-icons/lia";
 import { CgShoppingBag } from "react-icons/cg";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
+import img_7 from "../../assets/46.png";
+import { FaFan } from "react-icons/fa";
+import { LiaFanSolid } from "react-icons/lia";
+
+
+
+
 function HomeProducts() {
   const navigate = useNavigate()
   const { t, i18n } = useTranslation();
@@ -156,6 +163,62 @@ function HomeProducts() {
               </Link>
             </div>
           </Col>
+
+          <Col
+                dir={i18n.language === "en" ? "ltr" : "rtl"}
+                lg={4}
+                md={6}
+                className="mb-4"
+                data-aos="zoom-in"
+              >
+                <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
+                <FaFan
+                fontSize={"5rem"}
+                className="secondary-color"
+              />
+                  <h4 className="primary-color fs-3 ">
+                    {i18n.language === "en" ? "smoke axial inline fans" : "مراوح الدخان الخطية المحورية"}
+                  </h4>
+                  <p className="secondary-color lh-lg" style={{ flex: 1 }}>
+                    {i18n.language === "en"
+                      ? "This series is used for smoke evacuation from various types of applications such as (Tunnels - high rise buildings – car parkings -etc..)"
+                      : "يُستخدم هذا النوع من المراوح لإخراج الدخان من مختلف أنواع التطبيقات مثل (الأنفاق - المباني ذات الارتفاع العالي - مواقف السيارات - الخ)"}
+                  </p>
+                  <Link to="/products/smoke-axial">
+                    <button className="main-btn">
+                      {i18n.language === "en" ? "See More" : "عرض المزيد"}
+                    </button>
+                  </Link>
+                </div>
+              </Col>
+              <Col
+                dir={i18n.language === "en" ? "ltr" : "rtl"}
+                lg={4}
+                md={6}
+                className="mb-4"
+                data-aos="zoom-in"
+              >
+                <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
+                <LiaFanSolid 
+                 fontSize={"5rem"}
+                 className="secondary-color"
+                />
+                  <h4 className="primary-color fs-3 ">
+                    {i18n.language === "en" ? "smoke centrifugal fans" : "مراوح الدخان الطردية" }
+                  </h4>
+                  <p className="secondary-color lh-lg" style={{ flex: 1 }}>
+                    {i18n.language === "en"
+                      ? "This series is used for smoke evacuation from various types of Since more static pressure range could be achieved than axial fans and also more durable since it’s body construction is reinforced withstand high temperatures more than 900 °c "
+                      : "تُستخدم هذه السلسلة لشفط الدخان من مختلف أنواع المباني. يمكنها تحقيق نطاق أوسع من الضغط الثابت مقارنة بالمراوح المحورية وهي أكثر متانة بسبب بنيتها المقواة، والتي تتحمل درجات حرارة تزيد عن 900 درجة مئوية."}
+                  </p>
+                  <Link to="/products/smoke-centrifugal">
+                    <button className="main-btn">
+                      {i18n.language === "en" ? "See More" : "عرض المزيد"}
+                    </button>
+                  </Link>
+                </div>
+              </Col>
+
         </Row>
 
         <div className="d-flex justify-content-center">

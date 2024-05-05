@@ -8,6 +8,8 @@ import img_3 from "../../assets/image 16.png";
 import img_4 from "../../assets/image 17.png";
 import img_5 from "../../assets/image 18.png";
 import img_6 from "../../assets/image 19.png";
+import img_7 from "../../assets/46.png";
+import img_8 from "../../assets/49.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
@@ -30,7 +32,6 @@ function Products() {
 
             <Row className="d-flex align-items-stretch mb-4">
               <Col
-                style={{ width: '100%' }}
                 dir={i18n.language === "en" ? "ltr" : "rtl"}
                 lg={4}
                 md={6}
@@ -199,6 +200,58 @@ function Products() {
                       : "الواقيات، منافذ الهواء"}
                   </p>
                   <Link to="/products/accessories">
+                    <button className="main-btn">
+                      {i18n.language === "en" ? "See More" : "عرض المزيد"}
+                    </button>
+                  </Link>
+                </div>
+              </Col>
+              <Col
+                dir={i18n.language === "en" ? "ltr" : "rtl"}
+                lg={4}
+                md={6}
+                className="mb-4"
+                data-aos="zoom-in"
+              >
+                <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
+                  <div className="image smoke" >
+                    <img src={img_7} alt="" width={"110px"}/>
+                  </div>
+                  <h4 className="primary-color fs-3 ">
+                    {i18n.language === "en" ? "smoke axial inline fans" : "مراوح الدخان الخطية المحورية"}
+                  </h4>
+                  <p className="secondary-color lh-lg" style={{ flex: 1 }}>
+                    {i18n.language === "en"
+                      ? "This series is used for smoke evacuation from various types of applications such as (Tunnels - high rise buildings – car parkings -etc..)"
+                      : "يُستخدم هذا النوع من المراوح لإخراج الدخان من مختلف أنواع التطبيقات مثل (الأنفاق - المباني ذات الارتفاع العالي - مواقف السيارات - الخ)"}
+                  </p>
+                  <Link to="/products/smoke-axial">
+                    <button className="main-btn">
+                      {i18n.language === "en" ? "See More" : "عرض المزيد"}
+                    </button>
+                  </Link>
+                </div>
+              </Col>
+              <Col
+                dir={i18n.language === "en" ? "ltr" : "rtl"}
+                lg={4}
+                md={6}
+                className="mb-4"
+                data-aos="zoom-in"
+              >
+                <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
+                  <div className="image smoke" >
+                    <img src={img_8} alt="" width={"105px"}/>
+                  </div>
+                  <h4 className="primary-color fs-3 ">
+                    {i18n.language === "en" ? "smoke centrifugal fans" : "مراوح الدخان الطردية" }
+                  </h4>
+                  <p className="secondary-color lh-lg" style={{ flex: 1 }}>
+                    {i18n.language === "en"
+                      ? "This series is used for smoke evacuation from various types of Since more static pressure range could be achieved than axial fans and also more durable since it’s body construction is reinforced withstand high temperatures more than 900 °c "
+                      : "تُستخدم هذه السلسلة لشفط الدخان من مختلف أنواع المباني. يمكنها تحقيق نطاق أوسع من الضغط الثابت مقارنة بالمراوح المحورية وهي أكثر متانة بسبب بنيتها المقواة، والتي تتحمل درجات حرارة تزيد عن 900 درجة مئوية."}
+                  </p>
+                  <Link to="/products/smoke-centrifugal">
                     <button className="main-btn">
                       {i18n.language === "en" ? "See More" : "عرض المزيد"}
                     </button>
