@@ -60,6 +60,7 @@ function Footer() {
 
                   </div>
               </div>
+              
       <div dir={i18n.language === "en" ? "ltr" : "rtl"} className="copy_right">
    {i18n.language === "en" ? "© Copyright -" : "© حقوق النشر -"} <span>NOBEL</span> | {i18n.language === "en" ? "Developed by " : " تطوير بواسطة "} 
 

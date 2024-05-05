@@ -14,7 +14,7 @@ function About() {
     }, []);
   const { t, i18n } = useTranslation();
   return (
-    <div className="about" style={{ overflowX: "hidden" }}>
+    <div className="about" style={{ overflowX: "hidden"}} >
       <NavBar />
       <div className="container">
         <div className="about_top">

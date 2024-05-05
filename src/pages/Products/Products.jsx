@@ -21,7 +21,7 @@ function Products() {
   return (
     <div className="products">
       <NavBar />
-      <div className="container">
+      <div className="container" style={{maxWidth:"100%"}}>
         <div className="space-between-sections home-products">
           <div className="container">
             <h1 className="text-center fs-1 mb-5 ">
@@ -40,7 +40,7 @@ function Products() {
                   <div className="image">
                     <img src={img_1} alt="" />
                   </div>
-                  <h4 className="primary-color fs-3 ">
+                  <h4 className="primary-color fs-3">
                     {i18n.language === "en"
                       ? "CENTRIFUGAL FANS"
                       : "مرواح طردية"}

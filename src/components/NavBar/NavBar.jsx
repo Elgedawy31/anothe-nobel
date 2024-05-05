@@ -10,6 +10,8 @@ import { useTranslation } from "react-i18next";
 import SearchModal from "../../components/searchModal/SearchModal";
 
 const NavBar = () => {
+
+
   const { t, i18n } = useTranslation();
 
   const [state, setState] = useState({ state: false });
@@ -24,6 +26,9 @@ const NavBar = () => {
   const activeMobileMenu = () => {
     mobileMenuElement.current.toggleMobileMenu();
   };
+
+
+  
 
   const handleScroll = () => {
     if (scroll > top) {
@@ -111,12 +116,12 @@ const NavBar = () => {
     inputRef.current.blur();
     setFocused(false);
   };
+
+  
   return (
     <div>
       <div
-        className={`header-area header-sticky header-sticky--default ${
-          scroll > top ? "is-sticky" : ""
-        }`}
+        className={`header-area header-sticky header-sticky--default ${scroll > top ? "is-sticky" : ""  }`}
       >
         <div className="header-area__desktop header-area__desktop--default">
           <div className="header-top-bar">
@@ -193,7 +198,7 @@ const NavBar = () => {
                     </div>
                     <div
                       className="mobile-navigation-icon"
-                      style={{ width: "fit-content", height: "fit-content" }}
+                      style={{ width: "fit-content", height: "fit-content",marginRight:'1rem' }}
                     >
                       <div
                         className="languages-btn"

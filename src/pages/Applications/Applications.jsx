@@ -50,7 +50,7 @@ function Applications() {
 
           <div>
             <p dir={i18n.language === "en" ? "ltr" : "rtl"}>
-              {i18n.language === "en" ? "Select an" : "اختر نوع التطبيق"}{" "}
+              {i18n.language === "en" ? "Select an" : "اختر نوع "}{" "}
               <span>{i18n.language === "en" ? "Application" : "التطبيق"}</span>{" "}
               {i18n.language === "en"
                 ? "Type from the Drop Menu Below to View our Wide Range of Industrial Fan Offerings"
