@@ -423,6 +423,9 @@
   a {
     img {
       max-width: 190px;
+      @media (max-width:768px) {
+        max-width: 150px;
+      }
     }
   }
 }

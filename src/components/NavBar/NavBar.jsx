@@ -7,7 +7,6 @@ import MobileMenu from "../mobileMenu/MobileMenu";
 // @ts-ignore
 import logo from "../../assets/logo.png";
 import { useTranslation } from "react-i18next";
-import SearchModal from "../../components/searchModal/SearchModal";
 
 const NavBar = () => {
 

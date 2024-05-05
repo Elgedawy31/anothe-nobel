@@ -6,7 +6,7 @@ function ProductCard({ img, head, desc, list }) {
   const { t, i18n } = useTranslation();
   return (
     <Row
-      className="product-card p-4 mb-5 align-items-center jusitfy-content-center "
+      className="product-card   p-4 mb-5 align-items-center jusitfy-content-center "
       data-aos="zoom-in"
     >
       <Col className="d-flex align-items-center justify-content-center" lg="5">
