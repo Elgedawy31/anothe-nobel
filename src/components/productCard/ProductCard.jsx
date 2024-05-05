@@ -15,7 +15,7 @@ function ProductCard({ img, head, desc, list }) {
           src={img}
           alt=""
           style={{
-            width: "300px",
+            width: "250px",
             height: "auto",
             objectFit: "contain",
           }}
