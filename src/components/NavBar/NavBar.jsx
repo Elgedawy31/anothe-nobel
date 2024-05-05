@@ -30,13 +30,27 @@ const NavBar = () => {
 
   
 
+  // const handleScroll = () => {
+  //   if (scroll > top) {
+  //     document.body.style.paddingTop = `${height}px`;
+  //   } else {
+  //     document.body.style.paddingTop = "0";
+  //   }
+  // };
+
   const handleScroll = () => {
-    if (scroll > top) {
-      document.body.style.paddingTop = `${height}px`;
-    } else {
-      document.body.style.paddingTop = "0";
-    }
+    setScroll(window.scrollY);
   };
+
+  useEffect(() => {
+    const el = document.querySelector("nav");
+    setTop(el.offsetTop);
+    setHeight(el.offsetHeight);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const el = document.querySelector("nav");
@@ -120,9 +134,7 @@ const NavBar = () => {
   
   return (
     <div>
-      <div
-        className={`header-area header-sticky header-sticky--default ${scroll > top ? "is-sticky" : ""  }`}
-      >
+     <div className={`header-area header-sticky header-sticky--default ${scroll > top ? "is-sticky" : ""}`}>
         <div className="header-area__desktop header-area__desktop--default">
           <div className="header-top-bar">
             <div className="container"></div>

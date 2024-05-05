@@ -75,6 +75,13 @@
   }
 }
 
+@media (max-width:770px) {
+  .discover-desc {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
 .discover-btn {
   position: absolute;
   bottom: 20px;

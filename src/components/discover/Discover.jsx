@@ -8,7 +8,7 @@ function Discover() {
   const { t, i18n } = useTranslation();
   return (
     <Card className="discover-sec bg-color position-relative  ">
-      <div className="container mt-5">
+      <div className="container mt-3 ">
         <Card.Body>
           <div className="mb-4">
             <h4 className="text-center fs-3 secondary-color" >

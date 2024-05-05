@@ -21,7 +21,7 @@ function Products() {
   return (
     <div className="products">
       <NavBar />
-      <div className="container" style={{maxWidth:"100%"}}>
+      <div className="container" >
         <div className="space-between-sections home-products">
           <div className="container">
             <h1 className="text-center fs-1 mb-5 ">
@@ -30,6 +30,7 @@ function Products() {
 
             <Row className="d-flex align-items-stretch mb-4">
               <Col
+                style={{ width: '100%' }}
                 dir={i18n.language === "en" ? "ltr" : "rtl"}
                 lg={4}
                 md={6}

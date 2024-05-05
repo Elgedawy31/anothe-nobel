@@ -18,7 +18,7 @@ function Home() {
     <div style={{overflowX:"hidden"}}>
       <NavBar />
       <Hero />
-      <div className="explore-home space-between-sections">
+      <div className="explore-home space-between-sections" style={{marginBottom:"1.4rem"}}>
           {i18n.language === "en" && "Explore"}
            {i18n.language === "ar" && "استكشف"}
         </div>
