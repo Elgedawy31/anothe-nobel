@@ -3,13 +3,19 @@ import ProductHead from "../../components/productHead/ProductHead";
 import NavBar from "../../components/NavBar/NavBar";
 import { Col, Row } from "react-bootstrap";
 // @ts-ignore
-import img_1 from "../../assets/cent-product-img.png";
+import img_1 from "../../assets/26.png";
+// import img_1 from "../../assets/cent-product-img.png";
 // @ts-ignore
-import firstHeavy1 from "../../assets/heavy-duty-1.png";
-import firstHeavy2 from "../../assets/heavy-duty-2.png";
-import firstHeavy3 from "../../assets/heavy-duty-3.png";
-import firstHeavy4 from "../../assets/heavy-duty-4.png";
-import firstHeavy5 from "../../assets/heavy-duty-5.png";
+import firstHeavy1 from "../../assets/16.png";
+// import firstHeavy1 from "../../assets/heavy-duty-1.png";
+import firstHeavy2 from "../../assets/26.png";
+// import firstHeavy2 from "../../assets/heavy-duty-2.png";
+// import firstHeavy3 from "../../assets/heavy-duty-3.png";
+import firstHeavy4 from "../../assets/27.jpg";
+// import firstHeavy4 from "../../assets/heavy-duty-4.png";
+import firstHeavy5 from "../../assets/28.jpg";
+// import firstHeavy5 from "../../assets/heavy-duty-5.png";
+
 import ProductCard from "../../components/productCard/ProductCard";
 import Footer from "../../components/footer/Footer";
 import { useTranslation } from "react-i18next";
@@ -119,7 +125,7 @@ function CentrifugalFan() {
             </>
           }
         />
-        <ProductCard
+        {/* <ProductCard
           img={firstHeavy3}
           head={
             i18n.language === "en"
@@ -161,7 +167,7 @@ function CentrifugalFan() {
               )}
             </>
           }
-        />
+        /> */}
         <ProductCard
           img={firstHeavy4}
           head={

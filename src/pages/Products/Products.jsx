@@ -2,12 +2,18 @@ import "./products.css";
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/footer/Footer";
 import { Col, Row } from "react-bootstrap";
-import img_1 from "../../assets/image 14.png";
-import img_2 from "../../assets/image 15.png";
-import img_3 from "../../assets/image 16.png";
-import img_4 from "../../assets/image 17.png";
-import img_5 from "../../assets/image 18.png";
-import img_6 from "../../assets/image 19.png";
+import img_1 from "../../assets/26.png";
+// import img_1 from "../../assets/image 14.png";
+import img_2 from "../../assets/41.jpg";
+// import img_2 from "../../assets/image 15.png";
+import img_3 from "../../assets/44.jpg";
+// import img_3 from "../../assets/image 16.png";
+import img_4 from "../../assets/52.jpg";
+// import img_4 from "../../assets/image 17.png";
+import img_5 from "../../assets/54.jpg";
+// import img_5 from "../../assets/image 18.png";
+import img_6 from "../../assets/57.jpg";
+// import img_6 from "../../assets/image 19.png";
 import img_7 from "../../assets/46.png";
 import img_8 from "../../assets/49.png";
 import { Link } from "react-router-dom";
@@ -40,7 +46,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_1} alt="" />
+                    <img src={img_1} alt="" width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3">
                     {i18n.language === "en"
@@ -69,7 +75,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_2} alt="" />
+                    <img src={img_2} alt=""  width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en"
@@ -100,7 +106,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_3} alt="" />
+                    <img src={img_3} alt=""  width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en"
@@ -131,7 +137,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_4} alt="" />
+                    <img src={img_4} alt="" width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en"
@@ -150,7 +156,6 @@ function Products() {
                   </Link>
                 </div>
               </Col>
-
               <Col
                 dir={i18n.language === "en" ? "ltr" : "rtl"}
                 lg={4}
@@ -160,7 +165,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_5} alt="" />
+                    <img src={img_5} alt=""  width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en"
@@ -189,7 +194,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_6} alt="" />
+                    <img src={img_6} alt=""  width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en" ? "ACCESSORIES" : "الملحقات"}
