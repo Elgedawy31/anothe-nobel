@@ -1,10 +1,15 @@
 // @ts-nocheck
 import ProductHead from "../../components/productHead/ProductHead";
 import NavBar from "../../components/NavBar/NavBar";
-import firstHeavy1 from "../../assets/transport-series-1.png";
-import firstHeavy2 from "../../assets/transport-series-2.png";
-import firstHeavy3 from "../../assets/transport-series-3.png";
-import firstHeavy4 from "../../assets/transport-series-4.png";
+
+import firstHeavy1 from "../../assets/29.jpg";
+// import firstHeavy1 from "../../assets/transport-series-1.png";
+import firstHeavy2 from "../../assets/30.jpg";
+// import firstHeavy2 from "../../assets/transport-series-2.png";
+import firstHeavy3 from "../../assets/34.jpg";
+// import firstHeavy3 from "../../assets/transport-series-3.png";
+import firstHeavy4 from "../../assets/30.jpg";
+// import firstHeavy4 from "../../assets/transport-series-4.png";
 import ProductCard from "../../components/productCard/ProductCard";
 import Footer from "../../components/footer/Footer";
 import { useTranslation } from "react-i18next";
