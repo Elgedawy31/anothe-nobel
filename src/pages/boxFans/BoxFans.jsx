@@ -53,10 +53,10 @@ function BoxFans() {
           head={i18n.language === "en" ? "IN LINE" : "خطية"}
           list={[
             i18n.language === "en"
-              ? "Volume: from 100 m3/h up to 5000 m3/h"
-              : "الحجم: من 100 م3/ساعة إلى 5000 م3/ساعة",
+              ? "Volume: from 100 m3/h up to 250000 m3/h"
+              : "الحجم: من 100 م3/ساعة إلى 250000 م3/ساعة",
             i18n.language === "en"
-              ? "Pressure from 25 mm/H20 up to 80 mm/H20"
+              ? "Pressure from 5 mm/H20 up to 110 mm/H20"
               : "الضغط من 25 ملم/ساعة² حتى 80 ملم/ساعة²",
           ]}
           desc={
@@ -76,17 +76,17 @@ function BoxFans() {
           }
           list={[
             i18n.language === "en"
-              ? "Volume: from 750 m3/h up to 32000 m3/h"
-              : "الحجم: من 750 م3/ساعة إلى 32000 م3/ساعة",
+              ? "Volume: from 200 m3/h up to 6500 m3/h"
+              : "الحجم: من 200 م3/ساعة إلى 6500 م3/ساعة",
             i18n.language === "en"
-              ? "Pressure: from 30 mm/H20 up to 150mm/H20"
-              : "الضغط: من 30 ملم/ساعة² حتى 150 ملم/ساعة²",
+              ? "Pressure: from 10 mm/H20 up to 80 mm/H20"
+              : "الضغط: من 10 ملم/ساعة² حتى 80 ملم/ساعة²",
           ]}
           desc={
             <>
               {i18n.language === "en"
-                ? "Suitable where air extracting or filtering is necessary. The low noise level head makes them ideal for environments like offices, bars, and gymnasiums."
-                : "مناسبة عندما يكون من الضروري سحب الهواء أو تصفيته. يجعل مستوى الضجيج المنخفض الرأس مثاليًا لبيئات مثل المكاتب والحانات والصالات الرياضية."}
+                ? "Suited to ventilate and convey clean air up to a maximum temperature of 4ooc. The low noise level and the high compactness head make them ideal in ventilation plants with limited space like offices and shops."
+                : "مناسبة لتهوية ونقل الهواء النظيف بدرجة حرارة قصوى تصل إلى 400 درجة مئوية. يجعل مستوى الضجيج المنخفض وارتفاع الكفاءة في التصميم المضغوط منها مثالية في محطات التهوية ذات المساحة المحدودة مثل المكاتب والمتاجر."}
             </>
           }
         />
@@ -99,10 +99,10 @@ function BoxFans() {
           }
           list={[
             i18n.language === "en"
-              ? "Volume: from 750 m3/h up to 32000 m3/h"
-              : "الحجم: من 750 م3/ساعة إلى 32000 م3/ساعة",
+              ? "Volume: from 750 m3/h up to 500000 m3/h"
+              : "الحجم: من 750 م3/ساعة إلى 500000 م3/ساعة",
             i18n.language === "en"
-              ? "Pressure: from 30 mm/H20 up to 150mm/H20"
+              ? "Pressure: from 30 mm/H20 up to 150 mm/H20"
               : "الضغط: من 30 ملم/ساعة² حتى 150 ملم/ساعة²",
           ]}
           desc={

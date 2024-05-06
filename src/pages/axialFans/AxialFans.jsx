@@ -51,12 +51,12 @@ function AxialFans() {
               ? [
                   "Wheel sizes from 400 mm up to 1000 mm",
                   "Volume: from 1000 m3/h up to 43000 m3/h",
-                  "Pressure from 25 mm/H20 up to 80 mm/H20",
+                  "Pressure from 3 mm/H20 up to 25 mm/H20",
                 ]
               : [
                   "أحجام العجلة من 400 مم حتى 1000 مم",
                   "الحجم: من 1000 متر مكعب/ساعة إلى 43000 متر مكعب/ساعة",
-                  "الضغط من 25 مم/ساعة² إلى 80 مم/ساعة²",
+                  "الضغط من 3 مم/ساعة² إلى 25 مم/ساعة²",
                 ]
           }
           desc={
@@ -77,8 +77,8 @@ function AxialFans() {
           }
           list={[
             i18n.language === "en"
-              ? "Wheel sizes from 250 mm up mm"
-              : "أحجام العجلة من 250 مم حتى ملم",
+              ? "Wheel sizes from 250 mm up 710 mm"
+              : "أحجام العجلة من 250 مم حتى 710 ملم",
             i18n.language === "en"
               ? "Volume flow from 600 m3/h to 180000 m3/h"
               : "تدفق الحجم من 600 متر مكعب/ساعة إلى 180000 متر مكعب/ساعة",
@@ -109,13 +109,13 @@ function AxialFans() {
               ? "Volume: from 600 m3/h up to 250000 m3/h"
               : "تدفق الحجم من 600 متر مكعب/ساعة إلى 250000 متر مكعب/ساعة",
             i18n.language === "en"
-              ? "Pressure: from 10 mm/H20 up to 80mm/H20"
-              : "الضغط: من 10 مم/ساعة² إلى 80 مم/ساعة²",
+              ? "Pressure: from 5 mm/H20 up to 100 mm/H20"
+              : "الضغط: من 5 مم/ساعة² إلى 100 مم/ساعة²",
           ]}
           desc={
             <>
               {i18n.language === "en"
-                ? "Suitable for the exhaust of smoke, dusty foul and humid air up to a maximum temperature of 60°C."
+                ? "Suitable for the exhaust of smoke, dusty foul and humid air up to a maximum temperature of 600°C."
                 : "مناسبة لشفط الدخان والهواء الرطب والمتسخ حتى درجة حرارة قصوى تصل إلى 60 درجة مئوية."}
             </>
           }
@@ -135,13 +135,13 @@ function AxialFans() {
               ? "Volume: from 600 m3/h up to 250000 m3/h"
               : "الحجم: من 600 متر مكعب/ساعة إلى 250000 متر مكعب/ساعة",
             i18n.language === "en"
-              ? "Pressure: from 10 mm/H20 up to 80mm/H20"
-              : "الضغط: من 10 ملم/ساعة² إلى 80 ملم/ساعة²",
+              ? "Pressure: from 5 mm/H20 up to 100 mm/H20"
+              : "الضغط: من 5 ملم/ساعة² إلى 100 ملم/ساعة²",
           ]}
           desc={
             <>
               {i18n.language === "en"
-                ? "Suitable for the exhaust of smoke, dusty foul and humid air up to a maximum temperature of 60°C."
+                ? "Suitable for the exhaust of smoke, dusty foul and humid air up to a maximum temperature of 600°C."
                 : "مناسبة لشفط الدخان والهواء الرطب والمتسخ حتى درجة حرارة قصوى تصل إلى 60 درجة مئوية."}
             </>
           }

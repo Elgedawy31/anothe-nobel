@@ -73,7 +73,7 @@ function RoofTopFans() {
           desc={
             <>
               {i18n.language === "en"
-                ? "The NC series is widely used in civil and industrial ventilation plants. They are mainly suitable as air exhausters. The maximum of the fluid in continuous operation is 40°C."
+                ? "The NC series is widely used in civil and industrial ventilation plants. They are mainly suitable as air exhausters. The maximum of the fluid in continuous operation is 400°C."
                 : "تُستخدم سلسلة NC على نطاق واسع في محطات التهوية المدنية والصناعية. إنها مناسبة بشكل رئيسي كمنفث هواء. الحد الأقصى للسائل في التشغيل المستمر هو 40 درجة مئوية."}
             </>
           }

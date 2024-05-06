@@ -2,7 +2,7 @@ import { Col, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 
-function ProductCard({ img, head, desc, list }) {
+function ProductCard({ img, head, desc, list, imgStyle  }) {
   const { t, i18n } = useTranslation();
   return (
     <Row
@@ -15,8 +15,9 @@ function ProductCard({ img, head, desc, list }) {
           src={img}
           alt=""
           style={{
-            width: "250px",
+            width: "250px", // Set width to 100% to ensure it fills its container
             height: "auto",
+            ...imgStyle,
             objectFit: "contain",
           }}
           // style={{
