@@ -46,7 +46,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_1} alt="" width="150px"/>
+                    <img src={img_1} loading="lazy" alt="" width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3">
                     {i18n.language === "en"
@@ -75,7 +75,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_2} alt=""  width="150px"/>
+                    <img src={img_2} alt="" loading="lazy"  width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en"
@@ -106,7 +106,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_3} alt=""  width="150px"/>
+                    <img src={img_3} alt="" loading="lazy"  width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en"
@@ -137,7 +137,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_4} alt="" width="150px"/>
+                    <img src={img_4} alt="" loading="lazy" width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en"
@@ -165,7 +165,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_5} alt=""  width="150px"/>
+                    <img src={img_5} alt="" loading="lazy"  width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en"
@@ -194,7 +194,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_6} alt=""  width="150px"/>
+                    <img src={img_6} alt="" loading="lazy" width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en" ? "ACCESSORIES" : "الملحقات"}
@@ -220,7 +220,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
                   <div className="image smoke" >
-                    <img src={img_7} alt="" width={"110px"}/>
+                    <img src={img_7} alt="" loading="lazy" width={"110px"}/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en" ? "smoke axial inline fans" : "مراوح الدخان الخطية المحورية"}
@@ -246,7 +246,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
                   <div className="image smoke" >
-                    <img src={img_8} alt="" width={"105px"}/>
+                    <img src={img_8} alt="" loading="lazy" width={"105px"}/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en" ? "smoke centrifugal fans" : "مراوح الدخان الطردية" }

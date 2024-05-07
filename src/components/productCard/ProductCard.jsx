@@ -14,6 +14,7 @@ function ProductCard({ img, head, desc, list, imgStyle  }) {
       <img
           src={img}
           alt=""
+          loading="lazy"
           style={{
             width: "250px", // Set width to 100% to ensure it fills its container
             height: "auto",

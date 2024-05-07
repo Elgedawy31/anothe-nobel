@@ -26,7 +26,7 @@ function Home() {
       <Locations />
       <History />
       <Industirs />
-      <HomeProducts />
+      <HomeProducts/>
       {/* <Categories /> */}
       <Footer />
     </div>
