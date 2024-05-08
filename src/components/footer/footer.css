@@ -135,7 +135,7 @@
 
 @media (max-width: 580px) { 
   .container {
-    width: 99% !important; 
+    /* width: 99% !important;  */
     margin: 0 auto; 
   }
   .footer_top .image {
