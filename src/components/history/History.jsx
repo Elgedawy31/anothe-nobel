@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 // @ts-ignore
-import history from "../../assets/history.png";
+import history from "../../assets/50.jpg";
 import { useTranslation } from "react-i18next";
 
 function History() {
@@ -11,7 +11,7 @@ function History() {
     <div className="container history-section ">
       <Row className="space-between-sections">
         <Col lg={6}>
-          <img data-aos="fade-up-right" src={history} alt="" />
+          <img data-aos="fade-up-right" src={history} alt="" loading="lazy"/>
         </Col>
         <Col lg={6} className="tablet-gap">
           <Col className="history-box mb-5">
