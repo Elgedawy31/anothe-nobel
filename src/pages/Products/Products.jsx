@@ -2,7 +2,7 @@ import "./products.css";
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/footer/Footer";
 import { Col, Row } from "react-bootstrap";
-import img_1 from "../../assets/19.png";
+import img_1 from "../../assets/20.jpg";
 // import img_1 from "../../assets/image 14.png";
 import img_2 from "../../assets/41.jpg";
 // import img_2 from "../../assets/image 15.png";
@@ -46,7 +46,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_1} loading="lazy" alt="" width="150px" height="127px"/>
+                    <img src={img_1} loading="lazy" alt="" width="150px" height="122px"/>
                   </div>
                   <h4 className="primary-color fs-3">
                     {i18n.language === "en"
