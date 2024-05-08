@@ -2,7 +2,7 @@ import "./Applications.css";
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/footer/Footer";
 import img_bg from "../../assets/image 70.png";
-import img from "../../assets/WhatsApp Image 2023-12-19 at 11.56.png";
+import img from "../../assets/WhatsApp Image 2023-12-19 at 11.5666.png";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 
@@ -59,7 +59,34 @@ function Applications() {
 
             <select name="rental-option" className="custom-select">
               <option value="small">
-                {i18n.language === "en" ? "CENTRIFUGAL FAN" : "المروحة الطردية"}
+                {i18n.language === "en" ? "Centrifugal Fan (heavy duty)" : "مروحة الطرد المركزي (الخدمة الشاقة)"}
+              </option>
+              <option value="small">
+                {i18n.language === "en" ? "Centrifugal Fan (transport series)" : "مروحة الطرد المركزي (سلسلة النقل)"}
+              </option>
+              <option value="small">
+                {i18n.language === "en" ? "Centrifugal Fan (box fans)" : "مروحة الطرد المركزي (مراوح الصندوق)"}
+              </option>
+              <option value="small">
+                {i18n.language === "en" ? "Axial Fans Ventilation" : "تهوية المراوح المحورية"}
+              </option>
+              <option value="small">
+                {i18n.language === "en" ? "Roof Top Fans" : "مروحة السطح"}
+              </option>
+              <option value="small">
+                {i18n.language === "en" ? "Air Filtering System" : "نظام تصفية الهواء"}
+              </option>
+              <option value="small">
+                {i18n.language === "en" ? "Custom Ventilators" : "المنتجات المخصصة للتهوية"}
+              </option>
+              <option value="small">
+                {i18n.language === "en" ? "Accessories" : "ملحقات"}
+              </option>
+              <option value="small">
+                {i18n.language === "en" ? "smoke axial inline fans" : "مروحات شفط محورية مباشرة للدخان"}
+              </option>
+              <option value="small">
+                {i18n.language === "en" ? "smoke centrifugal fans" : "مراوح الطرد المركزي للدخان"}
               </option>
             </select>
           </div>

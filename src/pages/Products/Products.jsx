@@ -185,32 +185,7 @@ function Products() {
                 </div>
               </Col>
 
-              <Col
-                dir={i18n.language === "en" ? "ltr" : "rtl"}
-                lg={4}
-                md={6}
-                className="mb-4"
-                data-aos="zoom-in"
-              >
-                <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
-                  <div className="image">
-                    <img src={img_6} alt="" loading="lazy" width="150px"/>
-                  </div>
-                  <h4 className="primary-color fs-3 ">
-                    {i18n.language === "en" ? "ACCESSORIES" : "الملحقات"}
-                  </h4>
-                  <p className="secondary-color lh-lg" style={{ flex: 1 }}>
-                    {i18n.language === "en"
-                      ? "DAMPERS, AIR OUTLETS"
-                      : "الواقيات، منافذ الهواء"}
-                  </p>
-                  <Link to="/products/accessories">
-                    <button className="main-btn">
-                      {i18n.language === "en" ? "See More" : "عرض المزيد"}
-                    </button>
-                  </Link>
-                </div>
-              </Col>
+              
               <Col
                 dir={i18n.language === "en" ? "ltr" : "rtl"}
                 lg={4}
@@ -257,6 +232,33 @@ function Products() {
                       : "تُستخدم هذه السلسلة لشفط الدخان من مختلف أنواع المباني. يمكنها تحقيق نطاق أوسع من الضغط الثابت مقارنة بالمراوح المحورية وهي أكثر متانة بسبب بنيتها المقواة، والتي تتحمل درجات حرارة تزيد عن 900 درجة مئوية."}
                   </p>
                   <Link to="/products/smoke-centrifugal">
+                    <button className="main-btn">
+                      {i18n.language === "en" ? "See More" : "عرض المزيد"}
+                    </button>
+                  </Link>
+                </div>
+              </Col>
+
+              <Col
+                dir={i18n.language === "en" ? "ltr" : "rtl"}
+                lg={4}
+                md={6}
+                className="mb-4"
+                data-aos="zoom-in"
+              >
+                <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
+                  <div className="image">
+                    <img src={img_6} alt="" loading="lazy" width="150px"/>
+                  </div>
+                  <h4 className="primary-color fs-3 ">
+                    {i18n.language === "en" ? "ACCESSORIES" : "الملحقات"}
+                  </h4>
+                  <p className="secondary-color lh-lg" style={{ flex: 1 }}>
+                    {i18n.language === "en"
+                      ? "DAMPERS, AIR OUTLETS"
+                      : "الواقيات، منافذ الهواء"}
+                  </p>
+                  <Link to="/products/accessories">
                     <button className="main-btn">
                       {i18n.language === "en" ? "See More" : "عرض المزيد"}
                     </button>
