@@ -10,7 +10,8 @@ import firstHeavy2 from "../../assets/41.jpg";
 import firstHeavy3 from "../../assets/39.png";
 // import firstHeavy3 from "../../assets/axial-fans-3.png";
 
-import firstHeavy4 from "../../assets/axial-fans-4.png";
+import firstHeavy4 from "../../assets/42.png";
+// import firstHeavy4 from "../../assets/axial-fans-4.png";
 
 import firstHeavy5 from "../../assets/43.png";
 // import firstHeavy5 from "../../assets/axial-fans-5.png";
@@ -124,16 +125,16 @@ function AxialFans() {
           img={firstHeavy4}
           head={
             i18n.language === "en"
-              ? "DUCTED DIRECT DRIVEN WING BLADES - NEI/T series"
-              : "مراوح الأجنحة المباشرة المجهزة بالمداخل - سلسلة NEI/T"
-          }
+              ? "DUCTED DIRECT DRIVEN - EIH series"
+              : "سلسلة EIH - محرك مباشر مدعمة"
+            }
           list={[
             i18n.language === "en"
               ? "Wheel sizes from 400 mm up to 2240 mm"
               : "أحجام العجلة من 400 ملم إلى 2240 ملم",
             i18n.language === "en"
-              ? "Volume: from 600 m3/h up to 250000 m3/h"
-              : "الحجم: من 600 متر مكعب/ساعة إلى 250000 متر مكعب/ساعة",
+              ? "Volume: from 1200 m3/h up to 250000 m3/h"
+              : "الحجم: من 1200 متر مكعب/ساعة إلى 250000 متر مكعب/ساعة",
             i18n.language === "en"
               ? "Pressure: from 5 mm/H20 up to 100 mm/H20"
               : "الضغط: من 5 ملم/ساعة² إلى 100 ملم/ساعة²",
