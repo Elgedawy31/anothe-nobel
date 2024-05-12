@@ -4,7 +4,7 @@ import Footer from "../../components/footer/Footer";
 import img_bg from "../../assets/image 70.png";
 import img from "../../assets/WhatsApp Image 2023-12-19 at 11.5666.png";
 import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 
 function Applications() {
     // Scroll to the top when component mounts
@@ -12,6 +12,16 @@ function Applications() {
       window.scrollTo(0, 0); 
     }, []);
   const { t, i18n } = useTranslation();
+
+
+  const [selectedOption, setSelectedOption] = useState("heavy-duty");
+  const handleChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+  const handleGoClick = () => {
+    // Redirect to the selected product page
+    window.location.href = `/products/${selectedOption}`;
+  };
 
   return (
     <div className="applications">
@@ -57,40 +67,41 @@ function Applications() {
                 : "من القائمة المنسدلة أدناه لعرض مجموعتنا الواسعة من عروض المراوح الصناعية"}
             </p>
 
-            <select name="rental-option" className="custom-select">
-              <option value="small">
+            <select name="rental-option" className="custom-select"
+               onChange={handleChange}>
+              <option value="centrifugal-fan/heavy-duty">
                 {i18n.language === "en" ? "Centrifugal Fan (heavy duty)" : "مروحة الطرد المركزي (الخدمة الشاقة)"}
               </option>
-              <option value="small">
+              <option value="centrifugal-fan/transport-series">
                 {i18n.language === "en" ? "Centrifugal Fan (transport series)" : "مروحة الطرد المركزي (سلسلة النقل)"}
               </option>
-              <option value="small">
+              <option value="centrifugal-fan/box-fans">
                 {i18n.language === "en" ? "Centrifugal Fan (box fans)" : "مروحة الطرد المركزي (مراوح الصندوق)"}
               </option>
-              <option value="small">
+              <option value="axial-fans">
                 {i18n.language === "en" ? "Axial Fans Ventilation" : "تهوية المراوح المحورية"}
               </option>
-              <option value="small">
+              <option value="roof-top-fans">
                 {i18n.language === "en" ? "Roof Top Fans" : "مروحة السطح"}
               </option>
-              <option value="small">
+              <option value="air-filering">
                 {i18n.language === "en" ? "Air Filtering System" : "نظام تصفية الهواء"}
               </option>
-              <option value="small">
+              <option value="custom-venilrators">
                 {i18n.language === "en" ? "Custom Ventilators" : "المنتجات المخصصة للتهوية"}
               </option>
-              <option value="small">
+              <option value="accessories">
                 {i18n.language === "en" ? "Accessories" : "ملحقات"}
               </option>
-              <option value="small">
+              <option value="smoke-axial">
                 {i18n.language === "en" ? "smoke axial inline fans" : "مروحات شفط محورية مباشرة للدخان"}
               </option>
-              <option value="small">
+              <option value="smoke-centrifugal">
                 {i18n.language === "en" ? "smoke centrifugal fans" : "مراوح الطرد المركزي للدخان"}
               </option>
             </select>
 
-            <button className="main-btn" style={{ display: "block", margin: "2rem auto 0", marginTop: "2rem" }}>go</button>
+            <button onClick={handleGoClick} className="main-btn" style={{ display: "block", margin: "2rem auto 0", marginTop: "2rem" }}>go</button>
           </div>
         </div>
 
