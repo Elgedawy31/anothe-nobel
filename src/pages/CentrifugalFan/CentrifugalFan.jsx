@@ -3,7 +3,7 @@ import ProductHead from "../../components/productHead/ProductHead";
 import NavBar from "../../components/NavBar/NavBar";
 import { Col, Row } from "react-bootstrap";
 // @ts-ignore
-import img_1 from "../../assets/26.png";
+import img_1 from "../../assets/19.png";
 // import img_1 from "../../assets/cent-product-img.png";
 // @ts-ignore
 import firstHeavy1 from "../../assets/16.png";
@@ -16,16 +16,18 @@ import firstHeavy4 from "../../assets/27.jpg";
 import firstHeavy5 from "../../assets/28.jpg";
 // import firstHeavy5 from "../../assets/heavy-duty-5.png";
 
+import firstHeavy6 from "../../assets/20.jpg";
+import firstHeavy7 from "../../assets/21.png";
+
 import ProductCard from "../../components/productCard/ProductCard";
 import Footer from "../../components/footer/Footer";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 
 function CentrifugalFan() {
-
   // Scroll to the top when component mounts
   useEffect(() => {
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   }, []);
 
   const { t, i18n } = useTranslation();
@@ -68,28 +70,56 @@ function CentrifugalFan() {
           img={firstHeavy1}
           head={
             i18n.language === "en"
-              ? "BACKWARD BLADE WING PROFILE-"
-              : "ملف الجناح الخلفي للريشة-"
+              ? "BACKWARD BLADE WING PROFILE -The NBA series"
+              : "سلسلة NBA - نمط شفرة الجناح الخلفي"
           }
           list={
             i18n.language === "en"
               ? [
                   "Volume: from 2000 m3/h up to 250000 m3/h",
                   "Pressure: from 20 mm/H20 up to 350mm/H20",
-                  "Temperature: up to 2500 C",
+                  "Temperature: up to 300 °C",
                 ]
               : [
                   "الحجم: من 2000 متر مكعب/ساعة إلى 250000 متر مكعب/ساعة",
                   "الضغط: من 20 مم/ساعة² إلى 350 مم/ساعة²",
-                  "درجة الحرارة: تصل إلى 2500 درجة مئوية",
+                  "درجة الحرارة: تصل إلى 300 درجة مئوية",
                 ]
           }
           desc={
             i18n.language === "en"
-              ? "The NBA series characteristics are: - Low noise. For a fan the source of noise is mainly the airturbulence created by the impeller. The VBA series has been created to obtain the lowest noise thank to the aerodynamic profile of the inlet cone and of the static and dynamic balancing of the impeller"
-              : "سمات سلسلة NBA: - انخفاض الضوضاء. بالنسبة للمروحة، مصدر الضوضاء هو بشكل رئيسي الاضطرابات الهوائية التي تنشأ عند الدوامة التي ينشئها المروحة. تم إنشاء سلسلة VBA للحصول على أقل ضوضاء بفضل الملف الهوائي للمدخل والتوازن الثابت والديناميكي للمروحة."
+              ? "characteristics are: - Low noise. For a fan the source of noise is mainly the airturbulence created by the impeller. The VBA series has been created to obtain the lowest noise thank to the aerodynamic profile of the inlet cone and of the static and dynamic balancing of the impeller"
+              : "الخصائص هي: -انخفاض الضوضاء. بالنسبة للمروحة، مصدر الضوضاء هو بشكل رئيسي الاضطرابات الهوائية التي تنشأ عند الدوامة التي ينشئها المروحة. تم إنشاء سلسلة VBA للحصول على أقل ضوضاء بفضل الملف الهوائي للمدخل والتوازن الثابت والديناميكي للمروحة."
           }
         />
+
+        <ProductCard
+          img={firstHeavy6}
+          head={
+            i18n.language === "en"
+              ? "BACKWARD BLADE FLAT PROFILE -The NBR series"
+              : "سلسلة NBA - نمط شفرة الجناح الخلفي"
+          }
+          list={
+            i18n.language === "en"
+              ? [
+                  "Volume: from 2000 m3/h up to 250000 m3/h",
+                  "Pressure: from 20 mm/H20 up to 350mm/H20",
+                  "Temperature: up to 300 °C",
+                ]
+              : [
+                  "الحجم: من 2000 متر مكعب/ساعة إلى 250000 متر مكعب/ساعة",
+                  "الضغط: من 20 مم/ساعة² إلى 350 مم/ساعة²",
+                  "درجة الحرارة: تصل إلى 300 درجة مئوية",
+                ]
+          }
+          desc={
+            i18n.language === "en"
+              ? "characteristics are: Low noise. For a fan the source of noise is mainly the air turbulence created by the impeller. The VBR series has been created to obtain the lowest noise thank to the aerodynamic profile of the inlet cone and of the static and dynamic balancing of the impeller."
+              : "الخصائص: ضوضاء منخفضة. بالنسبة للمروحة، يكون مصدر الضوضاء بشكل رئيسي التشويش الهوائي الناتج عن المروحة. تم إنشاء سلسلة VBR للحصول على أقل ضوضاء بفضل الملف الديناميكي لملف المدخل والتوازن الديناميكي والاستاتيكي للمروحة."
+          }
+        />
+
         <ProductCard
           img={firstHeavy2}
           head={i18n.language === "en" ? "SCIROCCO PROFILE" : "الملف الشرقي"}
@@ -125,6 +155,45 @@ function CentrifugalFan() {
             </>
           }
         />
+
+        <ProductCard
+          img={firstHeavy7}
+          head={
+            i18n.language === "en"
+              ? "BACKWARD BLADE WING PROFILE - The NPD series"
+              : "المراوح الطردية بملف مسطح"
+          }
+          list={[
+            i18n.language === "en"
+              ? "Volume: from 1000 m3/h up to 160000 m3/h"
+              : "تدفق الحجم: من 1000 متر مكعب في الساعة حتى 160000 متر مكعب في الساعة",
+            i18n.language === "en"
+              ? "Pressure: from 100 mm/H20 up to 1000 mm/H20"
+              : "الضغط: من 100 ملم/ساعة إلى 1000 ملم/ساعة",
+            i18n.language === "en"
+              ? "Temperature: up to 90 °C and up to 400 °C with shaft cooler and hollow shaft"
+              : "الحرارة: حتى 90 درجة مئوية وحتى 400 درجة مئوية مع مبرد للعمود وعمود فارغ",
+          ]}
+          desc={
+            <>
+              {i18n.language === "en" ? (
+                <>
+                  are suitable for sever and difficult application and for the
+                  various industrial applications where a complete reliability
+                  of the product is necessary. Application sectors are pneumatic
+                  transportation, chemical industries, silos and metallurgic
+                  industries. Provided with direct or belt driven electrical
+                  motor with a fixed rotation speed
+                </>
+              ) : (
+                <>
+                  مناسبة للتطبيقات الصعبة والصارمة وللتطبيقات الصناعية المختلفة التي تتطلب موثوقية كاملة للمنتج. قطاعات التطبيق هي النقل الهوائي، وصناعات الكيماويات، والمستودعات، والصناعات المعدنية. مزودة بمحرك كهربائي مباشر أو بحزام بسرعة دوران ثابتة
+                </>
+              )}
+            </>
+          }
+        />
+
         {/* <ProductCard
           img={firstHeavy3}
           head={
@@ -172,38 +241,39 @@ function CentrifugalFan() {
           img={firstHeavy4}
           head={
             i18n.language === "en"
-              ? "BACKWARD BLADE WING PROFILE"
-              : "الملف الشفري للمروحة ذات الشفرة الخلفية"
+              ? "BACKWARD BLADE FLAT PROFILE"
+              : "المراوح الطردية بملف مسطح"
           }
           list={[
             i18n.language === "en"
-              ? "Volume: from 1000 m3/h up to 250000 m3/h"
-              : "الحجم: من 1000 متر مكعب/ساعة إلى 250000 متر مكعب/ساعة",
+              ? "Volume: from 500 m3/h up to 100000 m3/h"
+              : "تدفق الحجم: من 500 متر مكعب في الساعة حتى 100000 متر مكعب في الساعة",
             i18n.language === "en"
-              ? "Pressure: from 30 mm/H20 up to 150mm/H20"
-              : "الضغط: من 30 ملم/ساعة² إلى 150 ملم/ساعة²",
+              ? "Pressure: from 150 mm/H20 up to 1000 mm/H20"
+              : "الضغط: من 150 ملم/ساعة إلى 1000 ملم/ساعة",
             i18n.language === "en"
-              ? "Temperature: up to 90 °C and up to 400 © C with shaft cooler and shaft hollow"
-              : "درجة الحرارة: تصل إلى 90 درجة مئوية وتصل إلى 400 درجة مئوية مع مبرد ومجوف العمود",
+              ? "Temperature: up to 90 °C and up to 400 °C with shaft cooler and hollow shaft"
+              : "الحرارة: حتى 90 درجة مئوية وحتى 400 درجة مئوية مع مبرد للعمود وعمود فارغ",
           ]}
           desc={
             <>
               {i18n.language === "en" ? (
                 <>
-                  706 NPD series are suitable for severe and difficult
-                  applications and for various industrial applications where
-                  complete reliability of the product is necessary. Application
-                  sectors include pneumatic transportation, chemical industries,
-                  silos, and metallurgic industries. Provided with direct or
-                  belt-driven electrical motor with a fixed rotation speed.
+                  The NPE series are suitable for sever and difficult
+                  application and for the various industrial applications where
+                  a complete reliability of the product is necessary.
+                  Application sectors are pneumatic transportation, chemical
+                  industries, silos and metallurgic industries. Provided with
+                  direct or belt driven electrical motor with a fixed rotation
+                  speed.
                 </>
               ) : (
                 <>
-                  سلسلة 706 NPD مناسبة للتطبيقات الصعبة والصعبة ولمختلف
-                  التطبيقات الصناعية حيث يكون الاعتماد الكامل على موثوقية المنتج
-                  ضروريًا. تشمل قطاعات التطبيق النقل الهوائي، والصناعات
-                  الكيميائية، والمخازن، والصناعات المعدنية. مزود بمحرك كهربائي
-                  مباشر أو بحزام ذو سرعة دوران ثابتة.
+                  سلسلة NPE مناسبة لتطبيقات شديدة الصعوبة والتحديات في مختلف
+                  القطاعات الصناعية حيث يكون الاعتماد الكامل على موثوقية المنتج
+                  ضروريًا. تشمل هذه التطبيقات نقل الهواء بالضغط، وصناعات
+                  الكيماويات، والمستودعات، وصناعات التحول الفلزية. تتميز السلسلة
+                  بمحركات كهربائية مباشرة أو محزمة بسرعات دوران ثابتة.
                 </>
               )}
             </>
@@ -220,18 +290,18 @@ function CentrifugalFan() {
               ? "Pressure: from 150 mm/H20 up to 1100 mm/H20"
               : "الضغط: من 150 ملم/ساعة² إلى 1100 ملم/ساعة²",
             i18n.language === "en"
-              ? "Temperature: to 909 C and up to 4009 C with shaft cooler and hollow shaft"
-              : "درجة الحرارة: إلى 909 درجة مئوية وتصل إلى 4009 درجة مئوية مع مبرد وعمود مجوف",
+              ? "Temperature: up to 90 °C and up to 400 °C with shaft cooler and hollow shaft"
+              : "درجة الحرارة: تصل إلى 90 درجة مئوية وتصل إلى 400 درجة مئوية مع مبرد العمود وعمود فارغ.",
           ]}
           desc={
             <>
               {i18n.language === "en" ? (
                 <>
-                  706 NPD series are suitable for severe and difficult
-                  applications and for various industrial applications where
-                  complete reliability of the product is necessary. Application
-                  sectors include pneumatic transportation, chemical industries,
-                  silos, and metallurgic industries. Provided with direct or
+                  NPD series are suitable for severe and difficult applications
+                  and for various industrial applications where complete
+                  reliability of the product is necessary. Application sectors
+                  include pneumatic transportation, chemical industries, silos,
+                  and metallurgic industries. Provided with direct or
                   belt-driven electrical motor with a fixed rotation speed.
                 </>
               ) : (
@@ -245,6 +315,7 @@ function CentrifugalFan() {
               )}
             </>
           }
+          imgStyle={{ height: "270px" }}
         />
       </div>
 

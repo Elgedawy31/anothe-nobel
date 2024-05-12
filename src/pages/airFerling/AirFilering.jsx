@@ -2,9 +2,14 @@
 import ProductHead from "../../components/productHead/ProductHead";
 import NavBar from "../../components/NavBar/NavBar";
 import { Col, Row } from "react-bootstrap";
-import firstHeavy1 from "../../assets/first-air.png";
-import firstHeavy2 from "../../assets/second-air.png";
-import firstHeavy3 from "../../assets/third-air.png";
+
+import firstHeavy1 from "../../assets/53.jpg";
+// import firstHeavy1 from "../../assets/first-air.png";
+import firstHeavy2 from "../../assets/52.jpg";
+// import firstHeavy2 from "../../assets/second-air.png";
+import firstHeavy3 from "../../assets/51.jpg";
+// import firstHeavy3 from "../../assets/third-air.png";
+
 import ProductCard from "../../components/productCard/ProductCard";
 import Footer from "../../components/footer/Footer";
 import { useTranslation } from "react-i18next";

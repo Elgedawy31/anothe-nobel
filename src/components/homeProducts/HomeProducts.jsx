@@ -26,8 +26,8 @@ function HomeProducts() {
 
         <h3 className="secondary-color text-center fs-4 lh-base mb-5">
           {i18n.language === "en"
-            ? "Greenheck is the leading supplier of air movement, control and conditioning equipment"
-            : "غرينهيك هي الشركة الرائدة في توريد معدات حركة الهواء والتحكم وتكييف الهواء"}
+            ? "Nobel is the leading supplier of air movement, control and conditioning equipment"
+            : "نوبل هي الشركة الرائدة في توريد معدات حركة الهواء والتحكم وتكييف الهواء"}
         </h3>
 
         <Row className="d-flex align-items-stretch mb-4">
@@ -95,6 +95,7 @@ function HomeProducts() {
             </Link>
             </div>
           </Col>
+
           <Col lg={4} md={6} className="mb-4" data-aos="zoom-in">
             <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
               <GiComputerFan fontSize={"5rem"} className="secondary-color" />
@@ -117,7 +118,10 @@ function HomeProducts() {
             </Link>
             </div>
           </Col>
-          <Col lg={4} md={6} className="mb-4" data-aos="zoom-in">
+
+        
+
+              <Col lg={4} md={6} className="mb-4" data-aos="zoom-in">
             <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
               <LiaCrosshairsSolid
                 fontSize={"5rem"}
@@ -137,27 +141,6 @@ function HomeProducts() {
 
               <Link to="/products/custom-venilrators">
                 <button className="main-btn">
-                  {i18n.language === "en" ? "See More" : "رؤية المزيد"}
-                </button>
-              </Link>
-            </div>
-          </Col>
-
-          <Col lg={4} md={6} className="mb-4" data-aos="zoom-in">
-            <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
-              <CgShoppingBag fontSize={"5rem"} className="secondary-color" />
-              <h4 className="primary-color fs-3 ">
-                {i18n.language === "en" ? "ACCESSORIES" : "ملحقات"}
-              </h4>
-
-              <p className="secondary-color lh-lg" style={{ flex: 1 }}>
-                {i18n.language === "en"
-                  ? "DAMPERS, AIR OUTLETS"
-                  : "المنظمات، منافذ الهواء"}
-              </p>
-
-              <Link to="/products/accessories">
-                <button className="main-btn ">
                   {i18n.language === "en" ? "See More" : "رؤية المزيد"}
                 </button>
               </Link>
@@ -191,6 +174,7 @@ function HomeProducts() {
                   </Link>
                 </div>
               </Col>
+
               <Col
                 dir={i18n.language === "en" ? "ltr" : "rtl"}
                 lg={4}
@@ -218,6 +202,32 @@ function HomeProducts() {
                   </Link>
                 </div>
               </Col>
+
+        
+        
+          <Col lg={4} md={6} className="mb-4" data-aos="zoom-in">
+            <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
+              <CgShoppingBag fontSize={"5rem"} className="secondary-color" />
+              <h4 className="primary-color fs-3 ">
+                {i18n.language === "en" ? "ACCESSORIES" : "ملحقات"}
+              </h4>
+
+              <p className="secondary-color lh-lg" style={{ flex: 1 }}>
+                {i18n.language === "en"
+                  ? "DAMPERS, AIR OUTLETS"
+                  : "المنظمات، منافذ الهواء"}
+              </p>
+
+              <Link to="/products/accessories">
+                <button className="main-btn ">
+                  {i18n.language === "en" ? "See More" : "رؤية المزيد"}
+                </button>
+              </Link>
+            </div>
+          </Col>
+
+    
+            
 
         </Row>
 

@@ -1,6 +1,6 @@
 import "./footer.css";
 // @ts-ignore
-import Logo from "../../assets/Logo_remove_bg.png";
+import Logo from "../../assets/Logo_remove_bbg.png";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";

@@ -2,7 +2,7 @@ import "./products.css";
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/footer/Footer";
 import { Col, Row } from "react-bootstrap";
-import img_1 from "../../assets/26.png";
+import img_1 from "../../assets/20.jpg";
 // import img_1 from "../../assets/image 14.png";
 import img_2 from "../../assets/41.jpg";
 // import img_2 from "../../assets/image 15.png";
@@ -46,7 +46,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_1} alt="" width="150px"/>
+                    <img src={img_1} loading="lazy" alt="" width="150px" height="122px"/>
                   </div>
                   <h4 className="primary-color fs-3">
                     {i18n.language === "en"
@@ -75,7 +75,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_2} alt=""  width="150px"/>
+                    <img src={img_2} alt="" loading="lazy"  width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en"
@@ -106,7 +106,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_3} alt=""  width="150px"/>
+                    <img src={img_3} alt="" loading="lazy"  width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en"
@@ -137,7 +137,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_4} alt="" width="150px"/>
+                    <img src={img_4} alt="" loading="lazy" width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en"
@@ -165,7 +165,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start mr-3  home-products-card p-4 ">
                   <div className="image">
-                    <img src={img_5} alt=""  width="150px"/>
+                    <img src={img_5} alt="" loading="lazy"  width="150px"/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en"
@@ -185,32 +185,7 @@ function Products() {
                 </div>
               </Col>
 
-              <Col
-                dir={i18n.language === "en" ? "ltr" : "rtl"}
-                lg={4}
-                md={6}
-                className="mb-4"
-                data-aos="zoom-in"
-              >
-                <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
-                  <div className="image">
-                    <img src={img_6} alt=""  width="150px"/>
-                  </div>
-                  <h4 className="primary-color fs-3 ">
-                    {i18n.language === "en" ? "ACCESSORIES" : "الملحقات"}
-                  </h4>
-                  <p className="secondary-color lh-lg" style={{ flex: 1 }}>
-                    {i18n.language === "en"
-                      ? "DAMPERS, AIR OUTLETS"
-                      : "الواقيات، منافذ الهواء"}
-                  </p>
-                  <Link to="/products/accessories">
-                    <button className="main-btn">
-                      {i18n.language === "en" ? "See More" : "عرض المزيد"}
-                    </button>
-                  </Link>
-                </div>
-              </Col>
+              
               <Col
                 dir={i18n.language === "en" ? "ltr" : "rtl"}
                 lg={4}
@@ -220,7 +195,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
                   <div className="image smoke" >
-                    <img src={img_7} alt="" width={"110px"}/>
+                    <img src={img_7} alt="" loading="lazy" width={"110px"}/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en" ? "smoke axial inline fans" : "مراوح الدخان الخطية المحورية"}
@@ -246,7 +221,7 @@ function Products() {
               >
                 <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
                   <div className="image smoke" >
-                    <img src={img_8} alt="" width={"105px"}/>
+                    <img src={img_8} alt="" loading="lazy" width={"105px"}/>
                   </div>
                   <h4 className="primary-color fs-3 ">
                     {i18n.language === "en" ? "smoke centrifugal fans" : "مراوح الدخان الطردية" }
@@ -257,6 +232,33 @@ function Products() {
                       : "تُستخدم هذه السلسلة لشفط الدخان من مختلف أنواع المباني. يمكنها تحقيق نطاق أوسع من الضغط الثابت مقارنة بالمراوح المحورية وهي أكثر متانة بسبب بنيتها المقواة، والتي تتحمل درجات حرارة تزيد عن 900 درجة مئوية."}
                   </p>
                   <Link to="/products/smoke-centrifugal">
+                    <button className="main-btn">
+                      {i18n.language === "en" ? "See More" : "عرض المزيد"}
+                    </button>
+                  </Link>
+                </div>
+              </Col>
+
+              <Col
+                dir={i18n.language === "en" ? "ltr" : "rtl"}
+                lg={4}
+                md={6}
+                className="mb-4"
+                data-aos="zoom-in"
+              >
+                <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
+                  <div className="image">
+                    <img src={img_6} alt="" loading="lazy" width="150px"/>
+                  </div>
+                  <h4 className="primary-color fs-3 ">
+                    {i18n.language === "en" ? "ACCESSORIES" : "الملحقات"}
+                  </h4>
+                  <p className="secondary-color lh-lg" style={{ flex: 1 }}>
+                    {i18n.language === "en"
+                      ? "DAMPERS, AIR OUTLETS"
+                      : "الواقيات، منافذ الهواء"}
+                  </p>
+                  <Link to="/products/accessories">
                     <button className="main-btn">
                       {i18n.language === "en" ? "See More" : "عرض المزيد"}
                     </button>

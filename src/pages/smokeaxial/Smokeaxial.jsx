@@ -35,7 +35,7 @@ function Smokeaxial() {
           head={i18n.language === "en" ? "Axial inline smoke bifurcated fans series – NSAF/1(400°c/2hrs.)" : "سلسلة مراوح الطرد المحوري المتفرعة للدخان - NSAF/1 (400°C/2 ساعة)"}
           list={[
             i18n.language === "en"
-              ? "Wheel sizes from300 mm up to 2000 mm"
+              ? "Wheel sizes from 300 mm up to 2000 mm"
               : "الحجم: من 300 ملم حتى 2000 ملم",
             i18n.language === "en"
               ? "Volume flow from 1000m3/h up to 200000 m3/h"

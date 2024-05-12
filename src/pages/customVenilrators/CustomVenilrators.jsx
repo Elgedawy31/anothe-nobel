@@ -2,7 +2,8 @@
 import ProductHead from "../../components/productHead/ProductHead";
 import NavBar from "../../components/NavBar/NavBar";
 import { Col, Row } from "react-bootstrap";
-import firstHeavy1 from "../../assets/custom-ve.png";
+import firstHeavy1 from "../../assets/54.jpg";
+// import firstHeavy1 from "../../assets/custom-ve.png";
 import ProductCard from "../../components/productCard/ProductCard";
 import Footer from "../../components/footer/Footer";
 import { useTranslation } from "react-i18next";

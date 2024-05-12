@@ -41,14 +41,14 @@ function TransportSeries() {
           head={i18n.language === "en" ? "Fan series NT" : "سلسلة المراوح NT"}
           list={[
             i18n.language === "en"
-              ? "Volume: from 500 m3/h up to 100000 m3/h"
-              : "الحجم: من 500 م3/ساعة إلى 100000 م3/ساعة",
+              ? "Wheel sizes from 300 mm up to1600 mm"
+              : "أحجام العجلة: من 300 ملم إلى 1600 ملم",
             i18n.language === "en"
-              ? "Pressure: from 150 mm/H20 up to 1100 mm/H20"
-              : "الضغط: من 150 ملم/ساعة إلى 1100 ملم/ساعة",
+              ? "Volume flow from 1000 m3/h up to 100000 m3/h"
+              : "تدفق الحجم: من 1000 متر مكعب/ساعة إلى 100000 متر مكعب/ساعة",
             i18n.language === "en"
-              ? "Temperature: to 909 C and up to 4009 C with shaft cooler and hollow shaft"
-              : "الحرارة: إلى 909 درجة مئوية وحتى 4009 درجة مئوية مع تبريد العمود والعمود الفارغ",
+              ? "Pressure up to 700 mm/H20"
+              : "الضغط: يصل إلى 700 ملم/ساعة²",
           ]}
           desc={
             <>

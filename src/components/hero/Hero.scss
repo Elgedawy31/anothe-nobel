@@ -53,6 +53,17 @@
   }
 }
 
+.Home_Img-Slider{
+  display: grid;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+
+  img{
+    width: calc(25%);
+  }
+}
 .explore-home {
   font-size: 30px;
   font-weight: 500;

@@ -5,7 +5,7 @@ import { GrLanguage } from "react-icons/gr";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import MobileMenu from "../mobileMenu/MobileMenu";
 // @ts-ignore
-import logo from "../../assets/logo.png";
+import logo from "../../assets/Logo_remove_bg.png";
 import { useTranslation } from "react-i18next";
 
 const NavBar = () => {

@@ -12,7 +12,7 @@ function Discover() {
         <Card.Body>
           <div className="mb-4">
             <h4 className="text-center fs-3 secondary-color" >
-              {i18n.language === "en" && "discover Who are nabel?"}
+              {i18n.language === "en" && "discover Who are nobel ?"}
               {i18n.language === "ar" && "اكتشف من هم نوبل"}
             </h4>
             <h3 className="text-center fs-lg ">

@@ -1,8 +1,13 @@
 // @ts-nocheck
 import ProductHead from "../../components/productHead/ProductHead";
 import NavBar from "../../components/NavBar/NavBar";
-import firstHeavy1 from "../../assets/roof-top-fans-1.png";
-import firstHeavy2 from "../../assets/roof-top-fans-2.png";
+
+import firstHeavy1 from "../../assets/44.jpg";
+// import firstHeavy1 from "../../assets/roof-top-fans-1.png";
+
+import firstHeavy2 from "../../assets/45.jpg";
+// import firstHeavy2 from "../../assets/roof-top-fans-2.png";
+
 import ProductCard from "../../components/productCard/ProductCard";
 import Footer from "../../components/footer/Footer";
 import { useTranslation } from "react-i18next";
@@ -68,7 +73,7 @@ function RoofTopFans() {
           desc={
             <>
               {i18n.language === "en"
-                ? "The NC series is widely used in civil and industrial ventilation plants. They are mainly suitable as air exhausters. The maximum of the fluid in continuous operation is 40°C."
+                ? "The NC series is widely used in civil and industrial ventilation plants. They are mainly suitable as air exhausters. The maximum of the fluid in continuous operation is 400°C."
                 : "تُستخدم سلسلة NC على نطاق واسع في محطات التهوية المدنية والصناعية. إنها مناسبة بشكل رئيسي كمنفث هواء. الحد الأقصى للسائل في التشغيل المستمر هو 40 درجة مئوية."}
             </>
           }

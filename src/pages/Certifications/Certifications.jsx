@@ -67,13 +67,13 @@ function Certifications() {
 
             <div className="parent_certifications">
                  <div className="image">
-                  <img src={img_certifications_1} alt="" />
+                  <img src={img_certifications_1} alt="" loading="lazy"/>
                  </div>
                  <div className="image">
-                  <img src={img_certifications_2} alt="" />
+                  <img src={img_certifications_2} alt="" loading="lazy"/>
                  </div>
                  <div className="image">
-                  <img src={img_certifications_3} alt="" />
+                  <img src={img_certifications_3} alt="" loading="lazy"/>
                  </div>
             </div>
 
