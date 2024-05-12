@@ -89,6 +89,8 @@ function Applications() {
                 {i18n.language === "en" ? "smoke centrifugal fans" : "مراوح الطرد المركزي للدخان"}
               </option>
             </select>
+
+            <button className="main-btn" style={{ display: "block", margin: "2rem auto 0", marginTop: "2rem" }}>go</button>
           </div>
         </div>
 
