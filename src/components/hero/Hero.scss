@@ -195,6 +195,24 @@
 }
 
 
+.aaa span {
+  color: #357adc;
+  font-weight: bold;
+  font-size: 20px;
+ }
+ @media (max-width:769px) {
+   .aaa span {
+     font-size: 17px;
+    }
+ }
+ 
+ .aaaa span {
+  color: #357adc;
+  font-weight: bold;
+  font-size: 17px;
+ }
+
+ 
 .industires-description {
   width: 60%;
 }

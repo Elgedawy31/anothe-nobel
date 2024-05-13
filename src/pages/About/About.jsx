@@ -90,7 +90,7 @@ function About() {
           </p>
         </div>
 
-        <div className="about_bottom">
+        <div className="about_bottom" style={{marginTop:"4rem"}}>
           <div className="card" data-aos="fade-right">
             <FiHeadphones className="iconn" />
             <div dir={i18n.language === "en" ? "ltr" : "rtl"}>
