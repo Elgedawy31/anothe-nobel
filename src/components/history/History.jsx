@@ -18,10 +18,10 @@ function History() {
             <h3 className="secondary-color fs-2 mb-2" dir={i18n.language === "en" ? "ltr" : "rtl"}>
               {i18n.language === "en" ? "The Story" : "قصتنا"}
             </h3>
-            <p dir={i18n.language === "en" ? "ltr" : "rtl"}>
+            <p dir={i18n.language === "en" ? "ltr" : "rtl"} className="aaaa">
               {i18n.language === "en"
-                ? "NOBEL is a company which has been operating for more than 25 years in the aeraulic sector by producing various types of heavy-duty industrial fans, which are completely manufactured and assembled in Egypt."
-                : "نوبل هي شركة تعمل في قطاع الهواء لأكثر من 25 عامًا من خلال إنتاج مجموعة متنوعة من المراوح الصناعية الثقيلة التي يتم تصنيعها وتجميعها بالكامل في مصر."}
+                ? <p><span>NOBEL</span> is a company which has been operating for more than 25 years in the aeraulic sector by producing various types of heavy-duty industrial fans, which are completely manufactured and assembled in Egypt.</p>
+                : <p><span>نوبل</span> هي شركة تعمل في قطاع الهواء لأكثر من 25 عامًا من خلال إنتاج مجموعة متنوعة من المراوح الصناعية الثقيلة التي يتم تصنيعها وتجميعها بالكامل في مصر.</p> }
             </p>
           </Col>
           <Row>
@@ -30,10 +30,10 @@ function History() {
                 {i18n.language === "en" ? "1996" : "١٩٩٦"}
               </h3>
 
-              <p>
+              <p className="aaaa">
                 {i18n.language === "en"
-                  ? "NOBEL is a company which has been operating for more than 25 years."
-                  : "نوبل هي شركة تعمل منذ أكثر من 25 عامًا."}
+                  ? <p><span>NOBEL</span> is a company which has been operating for more than 25 years.</p>
+                  : <p><span>نوبل</span> هي شركة تعمل منذ أكثر من 25 عامًا.</p> }
               </p>
             </Col>
             <Col dir={i18n.language === "en" ? "ltr" : "rtl"}>

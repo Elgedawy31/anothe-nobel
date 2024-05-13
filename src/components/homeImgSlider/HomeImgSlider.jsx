@@ -36,8 +36,8 @@ function HomeImgSlider() {
             <div className="container">
               <img src={img_5} alt="" />
               <img src={img_6} alt="" />
-              <img src={img_7} alt="" />
               <img src={img_8} alt="" />
+              <img src={img_7} alt="" />
             </div>
           </div>
         </Carousel.Item>

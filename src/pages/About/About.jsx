@@ -20,20 +20,20 @@ function About() {
         <div className="about_top">
           <h1>{i18n.language === "en" ? "about us" : "من نحن"}</h1>
 
-          <p dir={i18n.language === "en" ? "ltr" : "rtl"}>
+          <p dir={i18n.language === "en" ? "ltr" : "rtl"} className="aaa">
             {i18n.language === "en"
-              ? "NOBEL is a company that has been operating for more than 30 years in the aeraulic sector by producing various types of heavy-duty industrial fans, which are completely manufactured and assembled in Egypt. NOBEL is the company that is able to provide inexpensive, reliable, and effective air ventilation solutions. Our production department is equipped with modern technologies such as laser cutting, CNC punching machines, static and dynamic balancing, etc., and also utilizes first-quality raw materials to provide an industrial fan that operates efficiently, quietly, and steadily for its required system, ensuring excellent reliability. Additionally, the engineering department is supported by CAD and CAE software tools for design and engineering applications. Due to the high demand for ventilators from the market, NOBEL is able to provide:"
-              : "شركة نوبل هي شركة تعمل منذ أكثر من 30 عامًا في قطاع الهواء من خلال إنتاج مجموعة متنوعة من المراوح الصناعية الثقيلة التي يتم تصنيعها وتجميعها بالكامل في مصر. نوبل هي الشركة التي تستطيع توفير حلول تهوية الهواء بأسعار معقولة وموثوقة وفعالة. يتمتع قسم الإنتاج لدينا بتقنيات حديثة مثل القطع بالليزر، وآلات القص بالحاسوب الرقمي CNC، والتوازن الثابت والديناميكي، وغيرها، كما يستخدم مواد خام ذات جودة عالية لتوفير مروحة صناعية تعمل بكفاءة وبصمت وباستقرار للنظام المطلوب، وتضمن الموثوقية الممتازة. بالإضافة إلى ذلك، يتم دعم قسم الهندسة بأدوات برمجية CAD و CAE لتطبيقات التصميم والهندسة. نظرًا للطلب العالي على المراوح من السوق، يستطيع نوبل توفير:"}
+              ? <p><span>NOBEL</span> is a company that has been operating for more than 30 years in the aeraulic sector by producing various types of heavy-duty industrial fans, which are completely manufactured and assembled in Egypt. NOBEL is the company that is able to provide inexpensive, reliable, and effective air ventilation solutions. Our production department is equipped with modern technologies such as laser cutting, CNC punching machines, static and dynamic balancing, etc., and also utilizes first-quality raw materials to provide an industrial fan that operates efficiently, quietly, and steadily for its required system, ensuring excellent reliability. Additionally, the engineering department is supported by CAD and CAE software tools for design and engineering applications. Due to the high demand for ventilators from the market, NOBEL is able to provide:</p>
+              : <p>شركة <span>نوبل</span> هي شركة تعمل منذ أكثر من 30 عامًا في قطاع الهواء من خلال إنتاج مجموعة متنوعة من المراوح الصناعية الثقيلة التي يتم تصنيعها وتجميعها بالكامل في مصر. نوبل هي الشركة التي تستطيع توفير حلول تهوية الهواء بأسعار معقولة وموثوقة وفعالة. يتمتع قسم الإنتاج لدينا بتقنيات حديثة مثل القطع بالليزر، وآلات القص بالحاسوب الرقمي CNC، والتوازن الثابت والديناميكي، وغيرها، كما يستخدم مواد خام ذات جودة عالية لتوفير مروحة صناعية تعمل بكفاءة وبصمت وباستقرار للنظام المطلوب، وتضمن الموثوقية الممتازة. بالإضافة إلى ذلك، يتم دعم قسم الهندسة بأدوات برمجية CAD و CAE لتطبيقات التصميم والهندسة. نظرًا للطلب العالي على المراوح من السوق، يستطيع نوبل توفير:</p> }
           </p>
 
           <h4 dir={i18n.language === "en" ? "ltr" : "rtl"}>
             {i18n.language === "en" ? "Centrifugal fans" : "المراوح الطردية"}
           </h4>
 
-          <p dir={i18n.language === "en" ? "ltr" : "rtl"}>
+          <p dir={i18n.language === "en" ? "ltr" : "rtl"} className="aaa">
             {i18n.language === "en"
-              ? "NOBEL centrifugal fans could supply all the flow rates and pressure needs as there are 3 categories of this type: low pressure, medium pressure, and high pressure of the following blade types."
-              : "يمكن لمراوح نوبل الطردية توفير جميع معدلات التدفق واحتياجات الضغط حيث تتوفر 3 فئات من هذا النوع: الضغط المنخفض والضغط المتوسط والضغط العالي من أنواع الشفرات التالية."}
+              ? <p><span>NOBEL</span> centrifugal fans could supply all the flow rates and pressure needs as there are 3 categories of this type: low pressure, medium pressure, and high pressure of the following blade types.</p>
+              : <p>يمكن لمراوح <span>نوبل</span> الطردية توفير جميع معدلات التدفق واحتياجات الضغط حيث تتوفر 3 فئات من هذا النوع: الضغط المنخفض والضغط المتوسط والضغط العالي من أنواع الشفرات التالية.</p> }
           </p>
 
           <h4 dir={i18n.language === "en" ? "ltr" : "rtl"}>
