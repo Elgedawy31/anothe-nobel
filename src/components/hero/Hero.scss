@@ -154,9 +154,9 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  margin-top: -2rem;
+
   @media #{$small-mobile} {
-    max-height: 65vh;
+    max-height: 40vh;
   }
 
   .industires-description {
@@ -175,7 +175,7 @@
     height: 70vh;
 
     @media #{$small-mobile} {
-      min-height: 85vh;
+      max-height: 40vh;
     }
   }
   .carousel-indicators {
@@ -193,25 +193,6 @@
     background: #317ae005;
   }
 }
-
-.aaa span {
- color: #357adc;
- font-weight: bold;
- font-size: 20px;
-}
-@media (max-width:769px) {
-  .aaa span {
-    font-size: 17px;
-   }
-}
-
-.aaaa span {
- color: #357adc;
- font-weight: bold;
- font-size: 17px;
-}
-
-
 
 
 .industires-description {
