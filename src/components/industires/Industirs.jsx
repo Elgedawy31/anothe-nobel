@@ -15,10 +15,11 @@ function Industirs() {
                 : "شركة نوبل الصناعية"}
             </h1>
 
-            <p className="industires-description">
+            <p className="industires-description" dir={i18n.language === "en" ? "ltr" : "rtl"}>
               {i18n.language === "en"
-                ? "NOBEL is a company which has been operating for more than 30 years in the aeraulic sector by producing various types of heavy-duty industrial fans, which are completely manufactured and assembled in Egypt. NOBEL is the company that is able to provide inexpensive, reliable, and effective air ventilation solutions. Our production department is equipped with modern technologies such as laser cutting, CNC punching machines, static and dynamic balancing, etc., and also utilizes first-quality raw materials to provide an industrial fan that operates efficiently, quietly, and steadily for its required system, ensuring excellent reliability. Additionally, the engineering department is supported by CAD and CAE software tools for design and engineering applications."
-                : "نوبل هي شركة تعمل منذ أكثر من 30 عامًا في قطاع الهواء من خلال إنتاج مجموعة متنوعة من المراوح الصناعية الثقيلة التي يتم تصنيعها وتجميعها بالكامل في مصر. نوبل هي الشركة التي تستطيع توفير حلول تهوية الهواء بأسعار معقولة وموثوقة وفعالة. يتمتع قسم الإنتاج لدينا بتقنيات حديثة مثل القطع بالليزر، وآلات القص بالحاسوب الرقمي CNC، والتوازن الثابت والديناميكي، وغيرها، كما يستخدم مواد خام ذات جودة عالية لتوفير مروحة صناعية تعمل بكفاءة وبصمت وباستقرار للنظام المطلوب، وتضمن الموثوقية الممتازة. بالإضافة إلى ذلك، يتم دعم قسم الهندسة بأدوات برمجية CAD و CAE لتطبيقات التصميم والهندسة."}
+                ? <p>our webinars helps in understanding any thing about an industrial fan <br /> so as to select the optimum operating point for the required  application.</p>
+                : <p>ندواتنا عبر الإنترنت تساعد في فهم أي شيء عن المروحة <br /> الصناعية، مما يتيح اختيار نقطة التشغيل الأمثل للتطبيق المطلوب.</p>
+                }
             </p>
           </div>
         </Carousel.Item>
@@ -26,14 +27,14 @@ function Industirs() {
           <div className="d-flex align-items-center justify-content-center h-100 flex-column container text-center">
             <h1>
               {i18n.language === "en"
-                ? "NOBEL Industries"
-                : "شركة نوبل الصناعية"}
+                ? "Centrifugal Fans"
+                : "مرواح طردية"}
             </h1>
 
-            <p className="industires-description">
+            <p className="industires-description" dir={i18n.language === "en" ? "ltr" : "rtl"}>
               {i18n.language === "en"
-                ? "NOBEL is a company that has been operating for more than 30 years in the aeraulic sector by producing various types of heavy-duty industrial fans, which are completely manufactured and assembled in Egypt. NOBEL is the company that is able to provide inexpensive, reliable, and effective air ventilation solutions. Our production department is equipped with modern technologies such as laser cutting, CNC punching machines, static and dynamic balancing, etc., and also utilizes first-quality raw materials to provide an industrial fan that operates efficiently, quietly, and steadily for its required system, ensuring excellent reliability. Additionally, the engineering department is supported by CAD and CAE software tools for design and engineering applications."
-                : "نوبل هي شركة تعمل منذ أكثر من 30 عامًا في قطاع الهواء من خلال إنتاج مجموعة متنوعة من المراوح الصناعية الثقيلة التي يتم تصنيعها وتجميعها بالكامل في مصر. نوبل هي الشركة التي تستطيع توفير حلول تهوية الهواء بأسعار معقولة وموثوقة وفعالة. يتمتع قسم الإنتاج لدينا بتقنيات حديثة مثل القطع بالليزر، وآلات القص بالحاسوب الرقمي CNC، والتوازن الثابت والديناميكي، وغيرها، كما يستخدم مواد خام ذات جودة عالية لتوفير مروحة صناعية تعمل بكفاءة وبصمت وباستقرار للنظام المطلوب، وتضمن الموثوقية الممتازة. بالإضافة إلى ذلك، يتم دعم قسم الهندسة بأدوات برمجية CAD و CAE لتطبيقات التصميم والهندسة."}
+                ? <p>NOBEL CENTRIFUGAL FANS ARE SUITABLE FOR THE EXHAUST OF CLEAN AIR, LIGHTLY DUSTY. <br /> BACKWARD IMPELLERS, WING AND SCIROCCO PROFILE, fan series NT, etc...</p>
+                : <p>مراوح نوبل الطردية مناسبة لتهوية الهواء النظيف والمواطن ذو <br /> الغبار الخفيف. المروحة الدافعة إلى الخلف، الجناح والملف الجانبي، سلسلة مرواح NT، إلخ...</p> }
             </p>
           </div>
         </Carousel.Item>
@@ -41,14 +42,29 @@ function Industirs() {
           <div className="d-flex align-items-center justify-content-center h-100 flex-column container text-center">
             <h1>
               {i18n.language === "en"
-                ? "NOBEL Industries"
-                : "شركة نوبل الصناعية"}
+                ? "Custom ventilators"
+                : "منظومات التهوية المخصصة"}
             </h1>
 
-            <p className="industires-description">
+            <p className="industires-description" dir={i18n.language === "en" ? "ltr" : "rtl"}>
               {i18n.language === "en"
-                ? "NOBEL is a company that has been operating for more than 30 years in the aeraulic sector by producing various types of heavy-duty industrial fans, which are completely manufactured and assembled in Egypt. NOBEL is the company that is able to provide inexpensive, reliable, and effective air ventilation solutions. Our production department is equipped with modern technologies such as laser cutting, CNC punching machines, static and dynamic balancing, etc., and also utilizes first-quality raw materials to provide an industrial fan that operates efficiently, quietly, and steadily for its required system, ensuring excellent reliability. Additionally, the engineering department is supported by CAD and CAE software tools for design and engineering applications."
-                : "نوبل هي شركة تعمل منذ أكثر من 30 عامًا في قطاع الهواء من خلال إنتاج مجموعة متنوعة من المراوح الصناعية الثقيلة التي يتم تصنيعها وتجميعها بالكامل في مصر. نوبل هي الشركة التي تستطيع توفير حلول تهوية الهواء بأسعار معقولة وموثوقة وفعالة. يتمتع قسم الإنتاج لدينا بتقنيات حديثة مثل القطع بالليزر، وآلات القص بالحاسوب الرقمي CNC، والتوازن الثابت والديناميكي، وغيرها، كما يستخدم مواد خام ذات جودة عالية لتوفير مروحة صناعية تعمل بكفاءة وبصمت وباستقرار للنظام المطلوب، وتضمن الموثوقية الممتازة. بالإضافة إلى ذلك، يتم دعم قسم الهندسة بأدوات برمجية CAD و CAE لتطبيقات التصميم والهندسة."}
+                ? "ARE DESIGNED TO EXACTING SPECIFICATIONS, MEET SPECIFIC FLOW, PRESSURE, TEMPERATURE ...ETC"
+                : "مصممة وفقًا لمواصفات دقيقة، تلبي تدفقًا محددًا وضغطًا ودرجة حرارة ... إلخ"}
+            </p>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item className="carousel-item">
+          <div className="d-flex align-items-center justify-content-center h-100 flex-column container text-center">
+            <h1>
+              {i18n.language === "en"
+                ? "AIR FILERING SYSTEM"
+                : "نظام تنقية الهواء"}
+            </h1>
+
+            <p className="industires-description" dir={i18n.language === "en" ? "ltr" : "rtl"}>
+              {i18n.language === "en"
+                ? <p>CARTRIDGE EXTRACTION & FILTRATION PLANTS, SLEEVES EXTRACTION & FILTRATION PLANTS, ACTIVE COAL FILTRATION PLANTS</p>
+                : <p>مصانع استخراج وتصفية الخراطيش، مصانع استخراج وتصفية الأكمام، مصانع تصفية الفحم النشط</p> }
             </p>
           </div>
         </Carousel.Item>
