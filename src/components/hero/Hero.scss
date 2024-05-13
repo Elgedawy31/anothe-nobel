@@ -154,9 +154,9 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  
+
   @media #{$small-mobile} {
-    max-height: 65vh;
+    max-height: 40vh;
   }
 
   .industires-description {
@@ -175,7 +175,7 @@
     height: 70vh;
 
     @media #{$small-mobile} {
-      min-height: 85vh;
+      max-height: 40vh;
     }
   }
   .carousel-indicators {
@@ -191,39 +191,5 @@
     text-align: center;
     box-shadow: 0px 4px 15px 0px #317ae033;
     background: #317ae005;
-  }
-}
-
-.aaa span {
- color: #357adc;
- font-weight: bold;
- font-size: 20px;
-}
-@media (max-width:769px) {
-  .aaa span {
-    font-size: 17px;
-   }
-}
-
-.aaaa span {
- color: #357adc;
- font-weight: bold;
- font-size: 17px;
-}
-
-
-
-
-.industires-description {
-  width: 60%;
-}
-@media (max-width:666px) {
-  .industrial-section h1 {
-     font-size: 28px;
-  }
-}
-@media (max-width:992px) {
-  .industires-description {
-    width: 100%;
   }
 }
