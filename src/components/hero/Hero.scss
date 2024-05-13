@@ -149,15 +149,13 @@
 }
 
 .industrial-section {
-  min-height: 70vh;
+  height: 70vh;
   background-image: url("../../assets/industiral-b.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
-  @media #{$small-mobile} {
-    min-height: 85vh;
-  }
+
 
   .industires-description {
     line-height: 35px;
