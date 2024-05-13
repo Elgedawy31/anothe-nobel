@@ -12,18 +12,18 @@ function Discover() {
         <Card.Body>
           <div className="mb-4">
             <h4 className="text-center fs-3 secondary-color" >
-              {i18n.language === "en" && "discover Who are nobel ?"}
+              {i18n.language === "en" && "Discover Who Are NOBEL ?"}
               {i18n.language === "ar" && "اكتشف من هم نوبل"}
             </h4>
             <h3 className="text-center fs-lg ">
-              {i18n.language === "en" && "nobel builds value in air"}
+              {i18n.language === "en" && "NOBEL Builds Value In Air"}
               {i18n.language === "ar" && "نوبل يبني قيمة في الهواء"}
             </h3>
           </div>
           <Row  style={{ marginBottom: "75px" }}>
             {i18n.language === "en" && (
-              <Col lg="8" className="lh-lg discover-desc tablet-center">
-                NOBEL is a company which has been operating for more than 25
+              <Col lg="8" className="lh-lg discover-desc tablet-center aaa">
+                <span>NOBEL</span> is a company which has been operating for more than 25
                 years in the aeraulic sector by producing various types of
                 heavy-duty industrial fans which are completely manufactured and
                 assembled in Egypt. NOBEL is the company that is able to provide

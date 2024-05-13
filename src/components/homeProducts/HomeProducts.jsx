@@ -21,12 +21,12 @@ function HomeProducts() {
     <div className="space-between-sections home-products">
       <div className="container">
         <h1 className="text-center fs-1 mb-4 ">
-          {i18n.language === "en" ? "Nobel Products" : "منتجات نوبل"}
+          {i18n.language === "en" ? "NOBEL Products" : "منتجات نوبل"}
         </h1>
 
         <h3 className="secondary-color text-center fs-4 lh-base mb-5">
           {i18n.language === "en"
-            ? "Nobel is the leading supplier of air movement, control and conditioning equipment"
+            ? "NOBEL is the leading supplier of air movement, control and conditioning equipment"
             : "نوبل هي الشركة الرائدة في توريد معدات حركة الهواء والتحكم وتكييف الهواء"}
         </h3>
 
