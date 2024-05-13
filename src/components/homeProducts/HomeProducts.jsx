@@ -36,7 +36,7 @@ function HomeProducts() {
               <BiWind fontSize={"5rem"} className="secondary-color" />
               <h4 className="primary-color fs-3 ">
                 {i18n.language === "en"
-                  ? "CENTRIFUGAL FANS"
+                  ? "Centrifugal fans"
                   : "المراوح الطردية"}
               </h4>
 
@@ -58,7 +58,7 @@ function HomeProducts() {
               <GrFan fontSize={"5rem"} className="secondary-color" />
               <h4 className="primary-color fs-3 ">
                 {i18n.language === "en"
-                  ? "AXial FANS VENTILATION"
+                  ? "Axial fans ventilation"
                   : "مراوح محورية للتهوية"}
               </h4>
 
@@ -79,7 +79,7 @@ function HomeProducts() {
             <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
               <BsFan fontSize={"5rem"} className="secondary-color" />
               <h4 className="primary-color fs-3 ">
-                {i18n.language === "en" ? "ROOF TOP FANS" : "مراوح على السطح"}
+                {i18n.language === "en" ? "Roof top fans" : "مراوح على السطح"}
               </h4>
 
               <p className="secondary-color lh-lg" style={{ flex: 1 }}>
@@ -101,7 +101,7 @@ function HomeProducts() {
               <GiComputerFan fontSize={"5rem"} className="secondary-color" />
               <h4 className="primary-color fs-3 ">
                 {i18n.language === "en"
-                  ? "AIR FILTERING SYSTEM"
+                  ? "Air filtering system"
                   : "نظام تصفية الهواء"}
               </h4>
 
@@ -129,7 +129,7 @@ function HomeProducts() {
               />
               <h4 className="primary-color fs-3 ">
                 {i18n.language === "en"
-                  ? "CUSTOM VENTILATORS"
+                  ? "Custom ventilators"
                   : "منظمات تهوية مخصصة"}
               </h4>
 
@@ -160,7 +160,7 @@ function HomeProducts() {
                 className="secondary-color"
               />
                   <h4 className="primary-color fs-3 ">
-                    {i18n.language === "en" ? "smoke axial inline fans" : "مراوح الدخان الخطية المحورية"}
+                    {i18n.language === "en" ? "Smoke axial inline fans" : "مراوح الدخان الخطية المحورية"}
                   </h4>
                   <p className="secondary-color lh-lg" style={{ flex: 1 }}>
                     {i18n.language === "en"
@@ -188,7 +188,7 @@ function HomeProducts() {
                  className="secondary-color"
                 />
                   <h4 className="primary-color fs-3 ">
-                    {i18n.language === "en" ? "smoke centrifugal fans" : "مراوح الدخان الطردية" }
+                    {i18n.language === "en" ? "Smoke centrifugal fans" : "مراوح الدخان الطردية" }
                   </h4>
                   <p className="secondary-color lh-lg" style={{ flex: 1 }}>
                     {i18n.language === "en"
@@ -209,7 +209,7 @@ function HomeProducts() {
             <div className="d-flex flex-column gap-4 h-100 align-items-center justify-content-start   home-products-card p-4 ">
               <CgShoppingBag fontSize={"5rem"} className="secondary-color" />
               <h4 className="primary-color fs-3 ">
-                {i18n.language === "en" ? "ACCESSORIES" : "ملحقات"}
+                {i18n.language === "en" ? "Accessories" : "ملحقات"}
               </h4>
 
               <p className="secondary-color lh-lg" style={{ flex: 1 }}>
