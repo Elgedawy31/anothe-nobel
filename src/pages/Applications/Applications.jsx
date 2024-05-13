@@ -14,7 +14,7 @@ function Applications() {
   const { t, i18n } = useTranslation();
 
 
-  const [selectedOption, setSelectedOption] = useState("heavy-duty");
+  const [selectedOption, setSelectedOption] = useState("");
   const handleChange = (event) => {
     setSelectedOption(event.target.value);
   };
@@ -67,8 +67,8 @@ function Applications() {
                 : "من القائمة المنسدلة أدناه لعرض مجموعتنا الواسعة من عروض المراوح الصناعية"}
             </p>
 
-            <select name="rental-option" className="custom-select"
-               onChange={handleChange}>
+            <select name="rental-option" className="custom-select" 
+                value={selectedOption} onChange={handleChange}>
               <option value="centrifugal-fan/heavy-duty">
                 {i18n.language === "en" ? "Centrifugal Fan (heavy duty)" : "مروحة الطرد المركزي (الخدمة الشاقة)"}
               </option>
