@@ -13,7 +13,7 @@ function Applications() {
   useEffect(() => {
     const firstOptionValue = document.querySelector('select[name="rental-option"] option').value;
     setSelectedOption(firstOptionValue);
-    window.scrollTo(0, 0); 
+    // window.scrollTo(0, 0); 
   }, []); 
 
   const handleChange = (event) => {
@@ -41,7 +41,7 @@ function Applications() {
               {i18n.language === "en" ? "ASK A QUESTION" : "اسأل سؤالًا"}
             </button>
           </div>
-          <img src={img_bg} alt="" />
+          <img src={img_bg} alt="" loading="lazy"/>
           <p dir={i18n.language === "en" ? "ltr" : "rtl"}>
             {i18n.language === "en"
               ? "Our portfolio of literally thousands of different types, models, and sizes of air-movement equipment can meet the requirements of almost every industrial and commercial application. We also offer customized solutions, tailored to the demanding specifics of your one-of-a-kind application."
