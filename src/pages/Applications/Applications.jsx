@@ -7,17 +7,19 @@ import { useTranslation } from "react-i18next";
 import { useEffect,useState } from "react";
 
 function Applications() {
-    // Scroll to the top when component mounts
-    useEffect(() => {
-      window.scrollTo(0, 0); 
-    }, []);
   const { t, i18n } = useTranslation();
 
+  const [selectedOption, setSelectedOption] = useState(""); 
+  useEffect(() => {
+    const firstOptionValue = document.querySelector('select[name="rental-option"] option').value;
+    setSelectedOption(firstOptionValue);
+    window.scrollTo(0, 0); 
+  }, []); 
 
-  const [selectedOption, setSelectedOption] = useState("");
   const handleChange = (event) => {
     setSelectedOption(event.target.value);
   };
+
   const handleGoClick = () => {
     // Redirect to the selected product page
     window.location.href = `/products/${selectedOption}`;
@@ -67,8 +69,12 @@ function Applications() {
                 : "من القائمة المنسدلة أدناه لعرض مجموعتنا الواسعة من عروض المراوح الصناعية"}
             </p>
 
-            <select name="rental-option" className="custom-select" 
-                value={selectedOption} onChange={handleChange}>
+            <select 
+               name="rental-option" 
+               className="custom-select" 
+               onChange={handleChange}
+                value={selectedOption} 
+                >
               <option value="centrifugal-fan/heavy-duty">
                 {i18n.language === "en" ? "Centrifugal Fan (heavy duty)" : "مروحة الطرد المركزي (الخدمة الشاقة)"}
               </option>
