@@ -21,8 +21,13 @@ function Applications() {
   };
 
   const handleGoClick = () => {
-    // Redirect to the selected product page
-    window.location.href = `/products/${selectedOption}`;
+    if (selectedOption) {
+      // Redirect to the selected product page only if an option is selected
+      window.location.href = `/products/${selectedOption}`;
+    } else {
+      // Handle the case where no option is selected
+      console.error("Please select a product before clicking Go.");
+    }
   };
 
   return (

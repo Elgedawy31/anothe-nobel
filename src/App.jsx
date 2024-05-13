@@ -38,7 +38,6 @@ const App = () => {
           <Route path="/Products" element={<Products />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route path="/applications" element={<Applications />} />
-          
           <Route path="/products/centrifugal-fan/heavy-duty" element={<CentrifugalFan />} />
           <Route path="/products/centrifugal-fan/transport-series" element={<TransportSeries  />} />
           <Route path="/products/centrifugal-fan/box-fans" element={<BoxFans  />} />
