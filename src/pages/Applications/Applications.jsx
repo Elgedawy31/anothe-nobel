@@ -7,20 +7,27 @@ import { useTranslation } from "react-i18next";
 import { useEffect,useState } from "react";
 
 function Applications() {
-    // Scroll to the top when component mounts
-    useEffect(() => {
-      window.scrollTo(0, 0); 
-    }, []);
   const { t, i18n } = useTranslation();
 
+  const [selectedOption, setSelectedOption] = useState(""); 
+  useEffect(() => {
+    const firstOptionValue = document.querySelector('select[name="rental-option"] option').value;
+    setSelectedOption(firstOptionValue);
+    // window.scrollTo(0, 0); 
+  }, []); 
 
-  const [selectedOption, setSelectedOption] = useState("heavy-duty");
   const handleChange = (event) => {
     setSelectedOption(event.target.value);
   };
+
   const handleGoClick = () => {
-    // Redirect to the selected product page
-    window.location.href = `/products/${selectedOption}`;
+    if (selectedOption) {
+      // Redirect to the selected product page only if an option is selected
+      window.location.href = `/products/${selectedOption}`;
+    } else {
+      // Handle the case where no option is selected
+      console.error("Please select a product before clicking Go.");
+    }
   };
 
   return (
@@ -39,7 +46,7 @@ function Applications() {
               {i18n.language === "en" ? "ASK A QUESTION" : "اسأل سؤالًا"}
             </button>
           </div>
-          <img src={img_bg} alt="" />
+          <img src={img_bg} alt="" loading="lazy"/>
           <p dir={i18n.language === "en" ? "ltr" : "rtl"}>
             {i18n.language === "en"
               ? "Our portfolio of literally thousands of different types, models, and sizes of air-movement equipment can meet the requirements of almost every industrial and commercial application. We also offer customized solutions, tailored to the demanding specifics of your one-of-a-kind application."
@@ -67,8 +74,12 @@ function Applications() {
                 : "من القائمة المنسدلة أدناه لعرض مجموعتنا الواسعة من عروض المراوح الصناعية"}
             </p>
 
-            <select name="rental-option" className="custom-select"
-               onChange={handleChange}>
+            <select 
+               name="rental-option" 
+               className="custom-select" 
+               onChange={handleChange}
+                value={selectedOption} 
+                >
               <option value="centrifugal-fan/heavy-duty">
                 {i18n.language === "en" ? "Centrifugal Fan (heavy duty)" : "مروحة الطرد المركزي (الخدمة الشاقة)"}
               </option>
