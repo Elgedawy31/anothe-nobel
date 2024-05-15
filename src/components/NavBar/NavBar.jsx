@@ -10,7 +10,6 @@ import { useTranslation } from "react-i18next";
 
 const NavBar = () => {
 
-
   const { t, i18n } = useTranslation();
 
   const [state, setState] = useState({ state: false });
@@ -255,14 +254,14 @@ const NavBar = () => {
                             <Link to={`/`}>
                               {" "}
                               {i18n.language === "en"
-                                ? "HOME"
+                                ? "Home"
                                 : "الصفحة الرئيسية"}{" "}
                             </Link>
                           </li>
 
                           <li className="has-children has-children--multilevel-submenu">
                             <Link to={`/products`}>
-                              {i18n.language === "en" ? "PRODUCTS" : "المنتجات"}
+                              {i18n.language === "en" ? "products" : "المنتجات"}
                               <MdOutlineKeyboardArrowDown
                                 style={{ marginLeft: "6px" }}
                                 fontSize={"1.2rem"}
@@ -433,7 +432,7 @@ const NavBar = () => {
                                   className="uppercase"
                                 >
                                   {i18n.language === "en"
-                                    ? "smoke axial inline fans"
+                                    ? "Smoke axial inline fans"
                                     : "مراوح الدخان الخطية المحورية"}
                                 </Link>                              
                               </li>
@@ -443,7 +442,7 @@ const NavBar = () => {
                                   className="uppercase"
                                 >
                                   {i18n.language === "en"
-                                    ? "smoke centrifugal fans"
+                                    ? "Smoke centrifugal fans"
                                     : "مراوح الدخان الطردية"}
                                 </Link>                              
                               </li>
@@ -452,51 +451,33 @@ const NavBar = () => {
                           <li className=" has-children--multilevel-submenu">
                             <Link to={"/applications"} className="menu-link">
                               {i18n.language === "en"
-                                ? "APPLICATIONS"
+                                ? "Applications"
                                 : "التطبيقات"}
                               {/* <MdOutlineKeyboardArrowDown
                                   style={{ marginLeft: "6px" }}
                                   fontSize={"1.2rem"}
                                 /> */}
                             </Link>
-                            {/* <ul className="submenu">
-                                <li>
-                                  <Link
-                                    to={`/locations/alabama`}
-                                    className="uppercase"
-                                  >
-                                    ALABAMA
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link
-                                    to={`/locations/florida`}
-                                    className="uppercase"
-                                  >
-                                    FLORIDA
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link
-                                    to={`/locations/texas`}
-                                    className="uppercase"
-                                  >
-                                    TEXAS
-                                  </Link>
-                                </li>
-                              </ul> */}
                           </li>
 
                           <li>
                             <Link to={`/certifications`}>
                               {i18n.language === "en"
-                                ? "CERTIFICATIONS"
+                                ? "Certifications"
                                 : "الشهادات"}
+                            </Link>{" "}
+                          </li>
+
+                          <li>
+                            <Link to={`/clients`}>
+                              {i18n.language === "en"
+                                ? "Clients"
+                                : "العملاء"}
                             </Link>{" "}
                           </li>
                           <li>
                             <Link to={`/about-us`}>
-                              {i18n.language === "en" ? "ABOUT" : "عنا"}
+                              {i18n.language === "en" ? "About" : "عنا"}
                             </Link>
                           </li>
                           {/* <li>

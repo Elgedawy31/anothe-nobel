@@ -114,13 +114,13 @@ class MobileMenu extends Component {
                   <li className="menu-item-has-children">
                     <Link to={`/`}>
                       {" "}
-                      {i18n.language === "en" ? "HOME" : "الصفحة الرئيسية"}{" "}
+                      {i18n.language === "en" ? "Home" : "الصفحة الرئيسية"}{" "}
                     </Link>
                   </li>
 
                   <li className="menu-item-has-children">
                     <Link to={`/products`}>
-                      {i18n.language === "en" ? "PRODUCTS" : "المنتجات"}
+                      {i18n.language === "en" ? "Products" : "المنتجات"}
                     </Link>
                     <ul className="sub-menu">
                       <li className="has-children has-children--multilevel-submenu">
@@ -278,7 +278,7 @@ class MobileMenu extends Component {
                                   className="uppercase"
                                 >
                                   {i18n.language === "en"
-                                    ? "smoke axial inline fans"
+                                    ? "Smoke axial inline fans"
                                     : "مراوح الدخان الخطية المحورية"}
                                 </Link>                              
                               </li>
@@ -288,7 +288,7 @@ class MobileMenu extends Component {
                                   className="uppercase"
                                 >
                                   {i18n.language === "en"
-                                    ? "smoke centrifugal fans"
+                                    ? "Smoke centrifugal fans"
                                     : "مراوح الدخان الطردية"}
                                 </Link>                              
                               </li>
@@ -296,7 +296,7 @@ class MobileMenu extends Component {
                   </li>
                   <li className="menu-item-has-children">
                     <Link to={`/applications`}>
-                      {i18n.language === "en" ? "APPLICATIONS" : "التطبيقات"}
+                      {i18n.language === "en" ? "Applications" : "التطبيقات"}
                     </Link>
                     {/* <ul className="sub-menu">
                       <li>
@@ -319,12 +319,19 @@ class MobileMenu extends Component {
 
                   <li className="menu-item-has-children">
                     <Link to={`/certifications`}>
-                      {i18n.language === "en" ? "CERTIFICATIONS" : "الشهادات"}
+                      {i18n.language === "en" ? "Certifications" : "الشهادات"}
                     </Link>
                   </li>
                   <li>
+                            <Link to={`/clients`}>
+                              {i18n.language === "en"
+                                ? "Clients"
+                                : "العملاء"}
+                            </Link>{" "}
+                    </li>
+                  <li>
                     <Link to={`/about-us`}>
-                      {i18n.language === "en" ? "ABOUT" : "عنا"}
+                      {i18n.language === "en" ? "About" : "عنا"}
                     </Link>
                   </li>
                   {/* <li>

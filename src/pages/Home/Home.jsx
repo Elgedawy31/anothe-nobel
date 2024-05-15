@@ -28,7 +28,7 @@ function Home() {
       <Discover />
       <Locations />
       <History />
-      <Industirs />
+      {/* <Industirs /> */}
       <HomeProducts />
       <div className="slider space-between-sections">
         <HomeImgSlider />

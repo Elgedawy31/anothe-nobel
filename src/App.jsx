@@ -18,6 +18,7 @@ import AxialFans from "./pages/axialFans/AxialFans";
 import './i18n';
 import Smokeaxial from "./pages/smokeaxial/Smokeaxial";
 import Smokecentrifugal from "./pages/smokecentrifugal/Smokecentrifugal";
+import Clients from "./pages/Clients/Clients";
 
 
 
@@ -37,6 +38,7 @@ const App = () => {
           {/* <Route path="/contact-us" element={<ContactUs />} /> */}
           <Route path="/Products" element={<Products />} />
           <Route path="/certifications" element={<Certifications />} />
+          <Route path="/clients" element={<Clients />} />
           <Route path="/applications" element={<Applications />} />
           <Route path="/products/centrifugal-fan/heavy-duty" element={<CentrifugalFan />} />
           <Route path="/products/centrifugal-fan/transport-series" element={<TransportSeries  />} />
