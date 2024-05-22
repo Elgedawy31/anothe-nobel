@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
 // @ts-ignore
-import discoverImg from "../../assets/nobel-discover.png";
+import discoverImg from "../../assets/image 3.png";
 import { useTranslation } from "react-i18next";
 
 function Discover() {
