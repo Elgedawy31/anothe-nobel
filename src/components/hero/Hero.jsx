@@ -1,6 +1,11 @@
 import "./Hero.scss";
 // @ts-ignore
 import hero from "../../assets/hero.png";
+// @ts-ignore
+import hero2 from "../../assets/second-hero-sec.png";
+// @ts-ignore
+import hero3 from "../../assets/third-hero-sec.png";
+
 import { useTranslation } from "react-i18next";
 import { Carousel } from "react-bootstrap";
 
@@ -30,7 +35,7 @@ function Hero() {
       <Carousel.Item className="carousel-item">
         <div
           className="hero-section "
-          style={{ backgroundImage: `url(${hero})` }}
+          style={{ backgroundImage: `url(${hero2})` }}
           dir={i18n.language === "en" ? "ltr" : "rtl"}
         >
           <div className="container">
@@ -48,7 +53,7 @@ function Hero() {
       <Carousel.Item className="carousel-item">
         <div
           className="hero-section "
-          style={{ backgroundImage: `url(${hero})` }}
+          style={{ backgroundImage: `url(${hero3})` }}
           dir={i18n.language === "en" ? "ltr" : "rtl"}
         >
           <div className="container">
