@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import { Carousel } from "react-bootstrap";
 
 function Hero() {
+
   const { t, i18n } = useTranslation();
 
   return (
