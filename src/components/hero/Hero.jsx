@@ -1,8 +1,16 @@
 import "./Hero.scss";
 // @ts-ignore
+<<<<<<< HEAD
 import hero_1 from "../../assets/hero.png";
 import hero_2 from "../../assets/Rectangle 91.png";
 import hero_3 from "../../assets/Frame 61.png";
+=======
+import hero from "../../assets/hero.png";
+// @ts-ignore
+import hero2 from "../../assets/second-hero-sec.png";
+// @ts-ignore
+import hero3 from "../../assets/third-hero-sec.png";
+>>>>>>> 62393d96af1408d86ddbc447a284a5cab3f55cc0
 
 import { useTranslation } from "react-i18next";
 import { Carousel } from "react-bootstrap";
@@ -34,7 +42,11 @@ function Hero() {
       <Carousel.Item className="carousel-item">
         <div
           className="hero-section "
+<<<<<<< HEAD
           style={{ backgroundImage: `url(${hero_2})` }}
+=======
+          style={{ backgroundImage: `url(${hero2})` }}
+>>>>>>> 62393d96af1408d86ddbc447a284a5cab3f55cc0
           dir={i18n.language === "en" ? "ltr" : "rtl"}
         >
           <div className="container">
@@ -52,7 +64,11 @@ function Hero() {
       <Carousel.Item className="carousel-item">
         <div
           className="hero-section "
+<<<<<<< HEAD
           style={{ backgroundImage: `url(${hero_3})` }}
+=======
+          style={{ backgroundImage: `url(${hero3})` }}
+>>>>>>> 62393d96af1408d86ddbc447a284a5cab3f55cc0
           dir={i18n.language === "en" ? "ltr" : "rtl"}
         >
           <div className="container">
